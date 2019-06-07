@@ -32,5 +32,7 @@ _tcsh_ is based on csh but also has programmable file name completion, command l
 * **_zsh_** (the Z shell)  
 _zsh_ is similar to ksh, but it also includes many features from csh.  
 
-## Commands
+## Bash
+[Reference Manual](https://tiswww.case.edu/php/chet/bash/bashref.html#Shell-Syntax)
+[Programming - Introduction HOW-TO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
 
