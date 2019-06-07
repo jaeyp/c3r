@@ -1,5 +1,4 @@
-# c3
-Conestoga Coding Club Repository
+# c3r (Conestoga Coding Club Repository)
 
 ---
 
