@@ -87,10 +87,10 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 * **:sp filename**	: Splits screen horizontally  
 * **:vs filename**	: Splits screen vertically  
 * **Ctrl+ww**		: Moves cursor to other window  
-* **Ctrl+w <Up>**
-* **Ctrl+w <Down>**
-* **Ctrl+w <Left>**
-* **Ctrl+w <Right>**
+* **Ctrl+w \<Up\>**
+* **Ctrl+w \<Down\>**
+* **Ctrl+w \<Left\>**
+* **Ctrl+w \<Right\>**
 
 ### 12. Other tips
 #### You can issue Linux commands from within your vi editor session
