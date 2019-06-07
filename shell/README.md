@@ -15,7 +15,7 @@ _sh_ is the original UNIX shell.
 
 * **_bash_** (Bourne-again shell)  ![](./star.png "important!") ![](./star.png "important!")  
 _bash_ is the default shell on Linux.  
-_bash_ is a superset of sh and it was written for the GNU project.  
+_bash_ is a superset of sh and it was written for the [GNU](https://www.gnu.org/home.en.html) project.  
 
 * **_ash_** (the Almquist shell)  
 _ash_ is a clone of sh.  
