@@ -5,36 +5,51 @@
 ![](./vi.modes.png)
 
 ## command mode
-### 1. delete
-**dw** 
-**dd** 
-**5dd**	: Delete current line and 4 lines below  
-**D**  
+### 1. move
+**w or W**	: Positions cursor to the next word  
+**b or B**	: Positions cursor to previous word  
+**(**	: Positions cursor to beginning of current sentence  
+**)**	: Positions cursor to beginning of next sentenct  
+**H**	: Move to top of screen  
+**M**	: Move to middle of screen  
+**L**	: Move to bottom of screen  
+**: along with x**	: Colon followed by a number would position the cursor on line number repregented by x  
+**:$**	: Positions cursor to the last line  
+**Ctrl+b**	: Moves backward one full screen  
+**Ctrl+f**	: Moves forward one full screen  
 
-### 2. copy
+### 2. delete
+**dw**	: Deletes the current word  
+**dd**	: Deletes the current line  
+**5dd**	: Deletes current line and 4 lines below  
+**d^**	: Deletes from current cursor position to the beginning of the line
+**d$**	: Deletes from current cursor position to the end of the line  
+**D**	: Deletes from current cursor position to the end of the line  
+
+### 3. copy
 **yy**  
 **5yy**	: Yank current line and 4 lines below  
 
-### 3. paste
+### 4. paste
 **p**  
 **P**  
 
-### 4. repeat
+### 5. repeat
 **.**  
 
-### 5. remove newline
+### 6. remove newline
 **J**  
 
-### 6. block select
+### 7. block select
 **v**  
 **vw**  
 
-### 7. indentation
+### 8. indentation
 **>>**  
 **5>>**  
 **3<<**  
 
-### 8. undo & redo
+### 9. undo & redo
 **u**  
 **Ctrl+r**  
 
