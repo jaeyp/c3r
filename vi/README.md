@@ -6,37 +6,37 @@
 
 ## command mode
 ### 1. delete
-** dw ** 
-** dd ** 
-** 5dd **	: Delete current line and 4 lines below  
-** D **  
+**dw** 
+**dd** 
+**5dd**	: Delete current line and 4 lines below  
+**D**  
 
-2. copy
-** yy **  
-** 5yy **	: Yank current line and 4 lines below  
+### 2. copy
+**yy**  
+**5yy**	: Yank current line and 4 lines below  
 
-3. paste
-** p **  
-** P **  
+### 3. paste
+**p**  
+**P**  
 
-4. repeat
-** . **  
+### 4. repeat
+**.**  
 
-5. remove newline
-** J **  
+### 5. remove newline
+**J**  
 
-6. block select
-** v **  
-** vw **  
+### 6. block select
+**v**  
+**vw**  
 
-7. indentation
-** >> **  
-** 5>> **  
-** 3<< **  
+### 7. indentation
+**>>**  
+**5>>**  
+**3<<**  
 
-8. undo & redo
-** u  
-** Ctrl+r  
+### 8. undo & redo
+**u**  
+**Ctrl+r**  
 
 ## last line mode
 :q		- quit
