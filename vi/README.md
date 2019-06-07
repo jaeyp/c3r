@@ -12,45 +12,47 @@
 * **H**	: Move to top of screen  
 * **M**	: Move to middle of screen  
 * **L**	: Move to bottom of screen  
-* **: along with x**	: Colon followed by a number would position the cursor on line number repregented by x  
-* **:$**	: Positions cursor to the last line  
+* **: along with x**	: Colon followed by a number would position the cursor on line number repregented by x  ![](./star.png "important!")
+* **:$**	: Positions cursor to the last line  ![](./star.png "important!")
 * **Ctrl+b**	: Moves backward one full screen  
 * **Ctrl+f**	: Moves forward one full screen  
 
 ### 2. delete
 * **dw**	: Deletes the current word  
-* **dd**	: Deletes the current line  ![](./star.16x16.png "important!")
-* **5dd**	: Deletes current line and 4 lines below  
+* **dd**	: Deletes the current line  ![](./star.png "important!") ![](./star.png "important!")
+* **5dd**	: Deletes current line and 4 lines below   ![](./star.png "important!") ![](./star.png "important!")
 * **d^**	: Deletes from current cursor position to the beginning of the line  
 * **d$**	: Deletes from current cursor position to the end of the line  
 * **D**	: Deletes from current cursor position to the end of the line  
 
 ### 3. copy
-**yy**  
-**5yy**	: Yank current line and 4 lines below  
+* **yy**	: Copies the current line  ![](./star.png "important!") ![](./star.png "important!")  
+* **5yy**	: Yank current line and 4 lines below   ![](./star.png "important!") ![](./star.png "important!")  
 
 ### 4. paste
-**p**  
-**P**  
+* **p**		: Puts the copied text after the cursor	 ![](./star.png "important!") ![](./star.png "important!")
+* **P**  	: Puts the copied text befor the cursor
 
 ### 5. repeat
-**.**  
+**.**		: Repeats the last change made in command mode  ![](./star.png "important!")
 
 ### 6. remove newline
 **J**  
 
 ### 7. block select
-**v**  
+**v**		: Start Visual mode characterwise  ![](./star.png "important!") ![](./star.png "important!")
+**V**		: Start Visual mode linewise  ![](./star.png "important!") ![](./star.png "important!")
+**Ctrl+v**	: Start Visual mode blockwise
 **vw**  
 
 ### 8. indentation
-**>>**  
-**5>>**  
-**3<<**  
+**>>**  ![](./star.png "important!")
+**5>>**  ![](./star.png "important!")
+**3<<**  ![](./star.png "important!")
 
 ### 9. undo & redo
-**u**  
-**Ctrl+r**  
+**u**  ![](./star.png "important!") ![](./star.png "important!") 
+**Ctrl+r**  ![](./star.png "important!") 
 
 ## last line mode
 :q		- quit
@@ -83,4 +85,8 @@ Ctrl+ww		- move to other window
 ### line number toggle
 :set nonu
 :set nu
+### further reading about visual mode
+:help visual-block
+:help visual-operators
+:help blockwise-operators
 
