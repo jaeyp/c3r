@@ -36,3 +36,7 @@ _zsh_ is similar to ksh, but it also includes many features from csh.
 [Reference Manual](https://tiswww.case.edu/php/chet/bash/bashref.html#Shell-Syntax)  
 [Programming - Introduction HOW-TO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)  
 
+## _.bashrc_ templates
+[Yiloing]()  
+[Jayden]()  
+
