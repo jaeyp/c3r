@@ -28,6 +28,8 @@
 * **d^**	: Deletes from current cursor position to the beginning of the line  
 * **d$**	: Deletes from current cursor position to the end of the line  
 * **D**	: Deletes from current cursor position to the end of the line  
+#### remove newline
+* **J**  
 
 ### 3. copy
 * **yy**	: Copies the current line  ![](./star.png "important!") ![](./star.png "important!")  
@@ -40,27 +42,18 @@
 ### 5. repeat
 * **.**		: Repeats the last change made in command mode  ![](./star.png "important!")
 
-### 6. remove newline
-* **J**  
-
-### 7. block select
-* **v**		: Start Visual mode characterwise  ![](./star.png "important!") ![](./star.png "important!")  
-* **V**		: Start Visual mode linewise  ![](./star.png "important!") ![](./star.png "important!")  
-* **Ctrl+v**	: Start Visual mode blockwise  
-* **vw**  
-
-### 8. indentation  ![](./star.png "important!")  
+### 6. indentation  ![](./star.png "important!")  
 * **>>**  
 * **5>>**  
 * **3<<**  
 
-### 9. Search  ![](./star.png "important!") ![](./star.png "important!")
+### 7. Search  ![](./star.png "important!") ![](./star.png "important!")
 * **/word_to_find**	: Finds a word  
 * **\***	: Finds the current word  
 * **n**		: Moves forward  
 * **N**		: Moves backward  
 
-### 10 Save and Exit  ![](./star.png "important!") ![](./star.png "important!")
+### 8. Save and Exit  ![](./star.png "important!") ![](./star.png "important!")
 * **:q**	: Quit  
 * **:q!**	: Quit without saving changes  
 * **:w**	: Write  
@@ -68,17 +61,23 @@
 
 ---
 
-### 11 Substraction 
+### 9. block select
+* **v**		: Start Visual mode characterwise  ![](./star.png "important!") ![](./star.png "important!")  
+* **V**		: Start Visual mode linewise  ![](./star.png "important!") ![](./star.png "important!")  
+* **Ctrl+v**	: Start Visual mode blockwise  
+* **vw**  
+
+### 10. Substraction 
 * **:5,10s/a/b/g**			: from 5 line to 10 line  
 * **:.,.+10s/a/b/g**		: from current line to current line + 10 line  
 * **:%s/hello/world/gi**	: %s: whole line, i: ignore case, g: global (substract every cases)  
 
-### 12 Multiple windows
+### 11. Multiple windows
 * **:sp filename**	: Splits screen horizontally  
 * **:vs filename**	: Splits screen vertically  
 * **Ctrl+ww**		: Moves to other window  
 
-### 13 Other tips
+### 12. Other tips
 #### you can issue Linux commands from within your vi editor session
 * **:!command_name_here** 	: Runs shell command and returns to command mode  
 * **:!bash**				: Runs bash keeping current editing, type 'exit' + enter to return to vi  
