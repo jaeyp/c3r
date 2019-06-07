@@ -2,13 +2,23 @@
 
 ## vi modes
 <img src="./vi.modes.png" alt="vi three modes" width="600"/>
+### iIoOaA
+* **i**	: Inserts text before current cursor location  ![](./star.png "important!") ![](./star.png "important!") 
+* **I**	: Inserts text at beginning of current line  
+* **o**	: Creates a new line for text entry below cursor location  
+* **O**	: Creates a new line for text entry above cursor location  
+* **a** : Inserts text after current cursor location  ![](./star.png "important!") ![](./star.png "important!") 
+* **A**	: Inserts text at end of current line  
+
+---
 
 ## Commands
 ### 0. undo & redo  ![](./star.png "important!") ![](./star.png "important!")
 * **u**  
 * **Ctrl+r**  
 
-### 1. move (you can use arrow keys and page-up/page-down key)
+### 1. move 
+You can also use arrow keys or page-up/page-down keys or home/end keys
 * **w or W**	: Positions cursor to the next word  
 * **b or B**	: Positions cursor to previous word  
 * **(**	: Positions cursor to beginning of current sentence  
@@ -78,16 +88,16 @@
 * **Ctrl+ww**		: Moves to other window  
 
 ### 12. Other tips
-#### you can issue Linux commands from within your vi editor session
+#### You can issue Linux commands from within your vi editor session
 * **:!command_name_here** 	: Runs shell command and returns to command mode  
 * **:!bash**				: Runs bash keeping current editing, type 'exit' + enter to return to vi  
-#### line number toggle
+#### Line number toggle
 * **:set nonu**	: Hides line number  
 * **:set nu**	: Shows line number  
-#### further reading
+#### Further reading
 * **:help**  
-##### about visual mode
-* **:help visual-block**  
-* **:help visual-operators**  
-* **:help blockwise-operators**  
+> ##### About visual mode
+> * **:help visual-block**  
+> * **:help visual-operators**  
+> * **:help blockwise-operators**  
 
