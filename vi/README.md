@@ -28,7 +28,7 @@
 * **d^**	: Deletes from current cursor position to the beginning of the line  
 * **d$**	: Deletes from current cursor position to the end of the line  
 * **D**	: Deletes from current cursor position to the end of the line  
-#### remove newline
+#### 2.1 remove newline
 * **J**  
 
 ### 3. copy
