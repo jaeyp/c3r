@@ -4,11 +4,11 @@
 <img src="./vi.modes.png" alt="vi three modes" width="600"/>
 
 ## Commands
-### 0. undo & redo
-* **u**  ![](./star.png "important!") ![](./star.png "important!")   
-* **Ctrl+r**  ![](./star.png "important!")  
+### 0. undo & redo  ![](./star.png "important!") ![](./star.png "important!")
+* **u**  
+* **Ctrl+r**  
 
-### 1. move
+### 1. move (you can use arrow keys and page-up/page-down key)
 * **w or W**	: Positions cursor to the next word  
 * **b or B**	: Positions cursor to previous word  
 * **(**	: Positions cursor to beginning of current sentence  
@@ -55,37 +55,39 @@
 * **3<<**  
 
 ### 9. Search  ![](./star.png "important!") ![](./star.png "important!")
-* **/word_to_find**	: Finds a word
-* **\***	: Finds the current word
-* **n**		: Moves forward
-* **N**		: Moves backward
+* **/word_to_find**	: Finds a word  
+* **\***	: Finds the current word  
+* **n**		: Moves forward  
+* **N**		: Moves backward  
 
 ### 10 Save and Exit  ![](./star.png "important!") ![](./star.png "important!")
-* **:q**	: Quit
-* **:q!**	: Quit without saving changes
-* **:w**	: Write
-* **:wq**	: Write and Quit
+* **:q**	: Quit  
+* **:q!**	: Quit without saving changes  
+* **:w**	: Write  
+* **:wq**	: Write and Quit  
 
 ---
 
 ### 11 Substraction 
-* **:5,10s/a/b/g**			: from 5 line to 10 line
-* **:.,.+10s/a/b/g**		: from current line to current line + 10 line
-* **:%s/hello/world/gi**	: %s: whole line, i: ignore case, g: global (substract every cases)
+* **:5,10s/a/b/g**			: from 5 line to 10 line  
+* **:.,.+10s/a/b/g**		: from current line to current line + 10 line  
+* **:%s/hello/world/gi**	: %s: whole line, i: ignore case, g: global (substract every cases)  
 
 ### 12 Multiple windows
-* **:sp filename**	: Splits screen horizontally
-* **:vs filename**	: Splits screen vertically
-* **Ctrl+ww**		: Moves to other window
+* **:sp filename**	: Splits screen horizontally  
+* **:vs filename**	: Splits screen vertically  
+* **Ctrl+ww**		: Moves to other window  
 
 ### 13 Other tips
 #### you can issue Linux commands from within your vi editor session
 * **:!command_name_here** 	: Runs shell command and returns to command mode  
 * **:!bash**				: Runs bash keeping current editing, type 'exit' + enter to return to vi  
 #### line number toggle
-* **:set nonu**	: Hides line number
-* **:set nu**	: Shows line number
-#### further reading about visual mode
+* **:set nonu**	: Hides line number  
+* **:set nu**	: Shows line number  
+#### further reading
+* **:help**  
+##### about visual mode
 * **:help visual-block**  
 * **:help visual-operators**  
 * **:help blockwise-operators**  
