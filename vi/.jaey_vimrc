@@ -1,0 +1,29 @@
+set ruler
+set bs=indent,eol,start
+set number
+set ts=4
+set sts=4
+set sw=4
+set tabstop=4
+set enc=utf-8
+
+set noet
+set sts=0
+set autoindent
+set cindent
+set smartindent
+set hlsearch
+set incsearch
+set background=dark
+
+set fdc=3
+set laststatus=2
+
+set hi=100
+set sc
+set history=1000
+set nocp
+
+set fdc=3
+
+set showmatch

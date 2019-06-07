@@ -115,3 +115,8 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 
 ## Ctags and Taglist and Cscope
 To be continue...
+
+---
+
+## _.vimrc_ templates
+[Jaey's](./jaey_vimrc)
