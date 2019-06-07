@@ -80,7 +80,7 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 
 ### 10. Replace operation
 * **:%s/foo/bar/**	: Replaces first occurrence of word foo with bar on all lines (The % is shorthand for all lines)	
-* **:5,10s/old-string/new-string/g**	: Replaces all occurrences on lines 5 througth 10 ('g' indicates all occurrences on a line (global))  ![](./star.png "important!")
+* **:5,10s/old-string/new-string/g**	: Replaces all occurrences on lines 5 througth 10 ('g' indicates all occurrences)  ![](./star.png "important!")
 * **:.,+10s/old-string/new-string/g**	: Replaces all occurrences at the current line for the next 10 lines
 * **:%s/old-string/new-string/gi**	: Replaces case-insensitive all occurrences on all lines. ('i' indicates ignore case)  ![](./star.png "important!")
 
