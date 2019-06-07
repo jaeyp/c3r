@@ -10,19 +10,19 @@ It usually is, or ends with, a dollar sign($) for ordinary users and a pound sig
 [Reference](http://www.linfo.org/shell.html)  
 
 ## Types of Shells
-### sh (the Bourne Shell)
+#### sh (the Bourne Shell)
 
-### bash (Bourne-again shell)  ![](./star.png "important!") ![](./star.png "important!")
+#### bash (Bourne-again shell)  ![](./star.png "important!") ![](./star.png "important!")
 
-### ash (the Almquist shell)
+#### ash (the Almquist shell)
 
-### csh (the C shell)
+#### csh (the C shell)
 
-### ksh (the Korn shell)
+#### ksh (the Korn shell)
 
-### tcsh (the TENEX C shell)
+#### tcsh (the TENEX C shell)
 
-### zsh (the Z shell)
+#### zsh (the Z shell)
 
 ## Commands
 
