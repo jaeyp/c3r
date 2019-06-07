@@ -28,8 +28,8 @@
 * **d^**	: Deletes from current cursor position to the beginning of the line  
 * **d$**	: Deletes from current cursor position to the end of the line  
 * **D**	: Deletes from current cursor position to the end of the line  
-#### 2.1 remove newline
-* **J**  
+> #### remove newline
+> * **J**  
 
 ### 3. copy
 * **yy**	: Copies the current line  ![](./star.png "important!") ![](./star.png "important!")  
