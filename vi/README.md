@@ -119,4 +119,4 @@ To be continue...
 ---
 
 ## _.vimrc_ templates
-[Jaey's](./jaey_vimrc)
+[Jaey's](./.jaey_vimrc)
