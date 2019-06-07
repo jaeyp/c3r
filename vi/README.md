@@ -1,8 +1,7 @@
 # vi/vim editor reference
 
 ## vi modes
-
-![](./vi.modes.png)
+<img src="./vi.modes.png" alt="vi three modes" width="600"/>
 
 ## command mode
 ### 1. move
@@ -22,7 +21,7 @@
 **dw**	: Deletes the current word  
 **dd**	: Deletes the current line  
 **5dd**	: Deletes current line and 4 lines below  
-**d^**	: Deletes from current cursor position to the beginning of the line
+**d^**	: Deletes from current cursor position to the beginning of the line  
 **d$**	: Deletes from current cursor position to the end of the line  
 **D**	: Deletes from current cursor position to the end of the line  
 
