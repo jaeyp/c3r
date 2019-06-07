@@ -60,9 +60,10 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 
 ### 7. search  ![](./star.png "important!") ![](./star.png "important!")
 * **/word_to_find**	: Finds a word  
-* **\***	: Finds the current word  
+* **\***	: Finds a word of current cursor position  
 * **n**		: Moves forward  
 * **N**		: Moves backward  
+* **:noh**	: Clears highlight (no highlight)
 
 ### 8. save and exit  ![](./star.png "important!") ![](./star.png "important!")
 * **:q**	: Quit  
@@ -100,6 +101,9 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 #### Line number toggle
 * **:set nonu**	: Hides line number  ![](./star.png "important!")
 * **:set nu**	: Shows line number  ![](./star.png "important!")
+#### Hex mode
+* **:%!xxd**	: Turns into hex mode (% matches whole file as a range, ! execute, xxd shell command)  
+* **:%!xxd -r**	: Turns back to text mode  
 #### Further reading
 * **:help**  ![](./star.png "important!")
 > ##### About visual mode
