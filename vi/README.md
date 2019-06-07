@@ -49,40 +49,42 @@
 * **Ctrl+v**	: Start Visual mode blockwise  
 * **vw**  
 
-### 8. indentation
-* **>>**  ![](./star.png "important!")  
-* **5>>**  ![](./star.png "important!")  
-* **3<<**  ![](./star.png "important!")  
+### 8. indentation  ![](./star.png "important!")  
+* **>>**  
+* **5>>**  
+* **3<<**  
 
-### 9. Search
-* **/word_to_find**
-* **\***	- find current word
-* **n**		- move forward
-* **N**		- move backward
+### 9. Search  ![](./star.png "important!") ![](./star.png "important!")
+* **/word_to_find**	: Finds a word
+* **\***	: Finds the current word
+* **n**		: Moves forward
+* **N**		: Moves backward
 
-### 10 Save and Exit
-* **:q**		- quit
-* **:q!**		- quit without saving changes
-* **:w**		- write
-* **:wq**		- write and quit
+### 10 Save and Exit  ![](./star.png "important!") ![](./star.png "important!")
+* **:q**	: Quit
+* **:q!**	: Quit without saving changes
+* **:w**	: Write
+* **:wq**	: Write and Quit
 
-### 11 Substraction
-* **:5,10s/a/b/g**		- from 5 line to 10 line
-* **:.,.+10s/a/b/g**		- from current line to current line + 10 line
-* **:%s/hello/world/gi**	- %s: whole line, i: ignore case, g: global (substract every cases)
+---
+
+### 11 Substraction 
+* **:5,10s/a/b/g**			: from 5 line to 10 line
+* **:.,.+10s/a/b/g**		: from current line to current line + 10 line
+* **:%s/hello/world/gi**	: %s: whole line, i: ignore case, g: global (substract every cases)
 
 ### 12 Multiple windows
-* **:sp filename**	- split screen horizontally
-* **:vs filename**	- split screen vertically
-* **Ctrl+ww**		- move to other window
+* **:sp filename**	: Splits screen horizontally
+* **:vs filename**	: Splits screen vertically
+* **Ctrl+ww**		: Moves to other window
 
 ### 13 Other tips
 #### you can issue Linux commands from within your vi editor session
-* **:!command_name_here** 	- run shell commands and returns to command mode  
-* **:!bash**			- run bash keeping current editing, type 'exit' + enter to return to vi  
+* **:!command_name_here** 	: Runs shell command and returns to command mode  
+* **:!bash**				: Runs bash keeping current editing, type 'exit' + enter to return to vi  
 #### line number toggle
-* **:set nonu**  
-* **:set nu**  
+* **:set nonu**	: Hides line number
+* **:set nu**	: Shows line number
 #### further reading about visual mode
 * **:help visual-block**  
 * **:help visual-operators**  
