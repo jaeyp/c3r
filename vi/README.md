@@ -5,25 +5,25 @@
 
 ## command mode
 ### 1. move
-**w or W**	: Positions cursor to the next word  
-**b or B**	: Positions cursor to previous word  
-**(**	: Positions cursor to beginning of current sentence  
-**)**	: Positions cursor to beginning of next sentenct  
-**H**	: Move to top of screen  
-**M**	: Move to middle of screen  
-**L**	: Move to bottom of screen  
-**: along with x**	: Colon followed by a number would position the cursor on line number repregented by x  
-**:$**	: Positions cursor to the last line  
-**Ctrl+b**	: Moves backward one full screen  
-**Ctrl+f**	: Moves forward one full screen  
+* **w or W**	: Positions cursor to the next word  
+* **b or B**	: Positions cursor to previous word  
+* **(**	: Positions cursor to beginning of current sentence  
+* **)**	: Positions cursor to beginning of next sentenct  
+* **H**	: Move to top of screen  
+* **M**	: Move to middle of screen  
+* **L**	: Move to bottom of screen  
+* **: along with x**	: Colon followed by a number would position the cursor on line number repregented by x  
+* **:$**	: Positions cursor to the last line  
+* **Ctrl+b**	: Moves backward one full screen  
+* **Ctrl+f**	: Moves forward one full screen  
 
 ### 2. delete
-**dw**	: Deletes the current word  
-**dd**	: Deletes the current line  
-**5dd**	: Deletes current line and 4 lines below  
-**d^**	: Deletes from current cursor position to the beginning of the line  
-**d$**	: Deletes from current cursor position to the end of the line  
-**D**	: Deletes from current cursor position to the end of the line  
+* **dw**	: Deletes the current word  
+* **dd**	: Deletes the current line  
+* **5dd**	: Deletes current line and 4 lines below  
+* **d^**	: Deletes from current cursor position to the beginning of the line  
+* **d$**	: Deletes from current cursor position to the end of the line  
+* **D**	: Deletes from current cursor position to the end of the line  
 
 ### 3. copy
 **yy**  
