@@ -1,7 +1,8 @@
 # vi/vim editor reference
 
 ## vi modes
-<img src="./vi.modes.png" alt="vi three modes" width="600"/>
+<img src="./vi.modes.png" alt="vi three modes" width="600"/>  
+
 ### iIoOaA
 * **i**	: Inserts text before current cursor location  ![](./star.png "important!") ![](./star.png "important!") 
 * **I**	: Inserts text at beginning of current line  
