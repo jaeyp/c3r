@@ -9,5 +9,20 @@ A **shell prompt**, also referred to as a command prompt is a character or set o
 It usually is, or ends with, a dollar sign($) for ordinary users and a pound sign(#) for the root (i.e., administrative) user.  
 [Reference](http://www.linfo.org/shell.html)  
 
+## Types of Shells
+### sh (the Bourne Shell)
+
+### bash (Bourne-again shell)  ![](./star.png "important!") ![](./star.png "important!")
+
+### ash (the Almquist shell)
+
+### csh (the C shell)
+
+### ksh (the Korn shell)
+
+### tcsh (the TENEX C shell)
+
+### zsh (the Z shell)
+
 ## Commands
 
