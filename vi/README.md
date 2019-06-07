@@ -53,18 +53,18 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 ### 5. repeat
 * **.**		: Repeats the last change made in command mode  ![](./star.png "important!")
 
-### 6. indentation  ![](./star.png "important!")  
+### 6. indent  ![](./star.png "important!")  
 * **>>**  
 * **5>>**  
 * **3<<**  
 
-### 7. Search  ![](./star.png "important!") ![](./star.png "important!")
+### 7. search  ![](./star.png "important!") ![](./star.png "important!")
 * **/word_to_find**	: Finds a word  
 * **\***	: Finds the current word  
 * **n**		: Moves forward  
 * **N**		: Moves backward  
 
-### 8. Save and Exit  ![](./star.png "important!") ![](./star.png "important!")
+### 8. save and exit  ![](./star.png "important!") ![](./star.png "important!")
 * **:q**	: Quit  
 * **:q!**	: Quit without saving changes  
 * **:w**	: Write  
@@ -72,19 +72,19 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 
 ---
 
-### 9. Block selection
+### 9. visual selection
 * **v**		: Start Visual mode characterwise  ![](./star.png "important!") ![](./star.png "important!")  
 * **V**		: Start Visual mode linewise  ![](./star.png "important!") ![](./star.png "important!")  
 * **Ctrl+v**	: Start Visual mode blockwise  
 * **vw**  
 
-### 10. Replace operation
+### 10. replace operation
 * **:%s/foo/bar/**	: Replaces first occurrence of word foo with bar on all lines (The % is shorthand for all lines)	
 * **:5,10s/old-string/new-string/g**	: Replaces all occurrences on lines 5 througth 10 ('g' indicates all occurrences)  ![](./star.png "important!")
 * **:.,+10s/old-string/new-string/g**	: Replaces all occurrences at the current line for the next 10 lines
 * **:%s/old-string/new-string/gi**	: Replaces case-insensitive all occurrences on all lines. ('i' indicates ignore case)  ![](./star.png "important!")
 
-### 11. Multiple windows
+### 11. multiple windows
 * **:sp filename**	: Splits screen horizontally   ![](./star.png "important!")
 * **:vs filename**	: Splits screen vertically   ![](./star.png "important!")
 * **Ctrl+ww**		: Moves cursor to other window   ![](./star.png "important!")
