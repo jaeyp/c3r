@@ -79,14 +79,14 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 * **vw**  
 
 ### 10. Substraction 
-* **:5,10s/a/b/g**			: from 5 line to 10 line  
+* **:5,10s/a/b/g**			: from 5 line to 10 line   ![](./star.png "important!")
 * **:.,.+10s/a/b/g**		: from current line to current line + 10 line  
-* **:%s/hello/world/gi**	: %s: whole line, i: ignore case, g: global (substract every cases)  
+* **:%s/hello/world/gi**	: %s: whole line, i: ignore case, g: global (substract every cases)   ![](./star.png "important!")
 
 ### 11. Multiple windows
-* **:sp filename**	: Splits screen horizontally  
-* **:vs filename**	: Splits screen vertically  
-* **Ctrl+ww**		: Moves cursor to other window  
+* **:sp filename**	: Splits screen horizontally   ![](./star.png "important!")
+* **:vs filename**	: Splits screen vertically   ![](./star.png "important!")
+* **Ctrl+ww**		: Moves cursor to other window   ![](./star.png "important!")
 * **Ctrl+w \<Up\>**
 * **Ctrl+w \<Down\>**
 * **Ctrl+w \<Left\>**
@@ -94,13 +94,13 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 
 ### 12. Other tips
 #### You can issue Linux commands from within your vi editor session
-* **:!command_name_here** 	: Runs shell command and returns to command mode  
+* **:!command_name_here** 	: Runs shell command and returns to command mode  ![](./star.png "important!")
 * **:!bash**				: Runs bash keeping current editing, type 'exit' + enter to return to vi  
 #### Line number toggle
-* **:set nonu**	: Hides line number  
-* **:set nu**	: Shows line number  
+* **:set nonu**	: Hides line number  ![](./star.png "important!")
+* **:set nu**	: Shows line number  ![](./star.png "important!")
 #### Further reading
-* **:help**  
+* **:help**  ![](./star.png "important!")
 > ##### About visual mode
 > * **:help visual-block**  
 > * **:help visual-operators**  
