@@ -11,26 +11,26 @@ It usually is, or ends with, a dollar sign($) for ordinary users and a pound sig
 
 ## Types of Shells
 #### sh (the Bourne Shell)
-**_sh-** is the original UNIX shell.
+_sh_ is the original UNIX shell.
 
 #### bash (Bourne-again shell)  ![](./star.png "important!") ![](./star.png "important!")
-**_bash_** is the default shell on Linux.
-**_bash_** is a superset of sh and it was written for the GNU project.
+_bash_ is the default shell on Linux.
+_bash_ is a superset of sh and it was written for the GNU project.
 
 #### ash (the Almquist shell)
-**_ash_** is a clone of sh.
+_ash_ is a clone of sh.
 
 #### csh (the C shell)
-**_csh_** has a syntax that resembles that of the C programming language.
+_csh_ has a syntax that resembles that of the C programming language.
 
 #### ksh (the Korn shell)
-**_ksh_** is a superset of sh.
+_ksh_ is a superset of sh.
 
 #### tcsh (the TENEX C shell)a
-**_tcsh_** is based on csh but also has programmable file name completion, command line editing, a command history mechanism and other features lacking in csh.
+_tcsh_ is based on csh but also has programmable file name completion, command line editing, a command history mechanism and other features lacking in csh.
 
 #### zsh (the Z shell)
-**_zsh_** is similar to ksh, but it also includes many features from csh.
+_zsh_ is similar to ksh, but it also includes many features from csh.
 
 ## Commands
 
