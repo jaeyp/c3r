@@ -19,7 +19,8 @@
 
 ### 2. delete
 * **dw**	: Deletes the current word  
-* **dd**	: Deletes the current line ![](./star.png)
+* **dd**	: Deletes the current line 
+![](./star.png "important!")
 * **5dd**	: Deletes current line and 4 lines below  
 * **d^**	: Deletes from current cursor position to the beginning of the line  
 * **d$**	: Deletes from current cursor position to the end of the line  
