@@ -5,38 +5,38 @@
 ![](./vi.modes.png)
 
 ## command mode
-1. delete
-> dw  
-> dd  
-> 5dd		- Delete current line and 4 lines below  
-> D  
+### 1. delete
+** dw ** 
+** dd ** 
+** 5dd **	: Delete current line and 4 lines below  
+** D **  
 
 2. copy
-> yy  
-> 5yy		- Yank current line and 4 lines below  
+** yy **  
+** 5yy **	: Yank current line and 4 lines below  
 
 3. paste
-> p  
-> P  
+** p **  
+** P **  
 
 4. repeat
-> .  
+** . **  
 
 5. remove newline
-> J  
+** J **  
 
 6. block select
-> v  
-> vw  
+** v **  
+** vw **  
 
 7. indentation
-> >>  
-> 5>>  
-> 3<<  
+** >> **  
+** 5>> **  
+** 3<< **  
 
 8. undo & redo
-> u  
-> Ctrl+r  
+** u  
+** Ctrl+r  
 
 ## last line mode
 :q		- quit
