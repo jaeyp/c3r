@@ -72,16 +72,17 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 
 ---
 
-### 9. block select
+### 9. Block selection
 * **v**		: Start Visual mode characterwise  ![](./star.png "important!") ![](./star.png "important!")  
 * **V**		: Start Visual mode linewise  ![](./star.png "important!") ![](./star.png "important!")  
 * **Ctrl+v**	: Start Visual mode blockwise  
 * **vw**  
 
-### 10. Substraction 
-* **:5,10s/a/b/g**			: from 5 line to 10 line   ![](./star.png "important!")
-* **:.,.+10s/a/b/g**		: from current line to current line + 10 line  
-* **:%s/hello/world/gi**	: %s: whole line, i: ignore case, g: global (substract every cases)   ![](./star.png "important!")
+### 10. Replace operation
+* **:%s/foo/bar/**	: Replaces first occurrence of word foo with bar on all lines (The % is shorthand for all lines)	
+* **:5,10s/old-string/new-string/g**	: Replaces all occurrences on lines 5 througth 10 ('g' indicates all occurrences on a line (global))  ![](./star.png "important!")
+* **:.,+10s/old-string/new-string/g**	: Replaces all occurrences at the current line for the next 10 lines
+* **:%s/old-string/new-string/gi**	: Replaces case-insensitive all occurrences on all lines. ('i' indicates ignore case)  ![](./star.png "important!")
 
 ### 11. Multiple windows
 * **:sp filename**	: Splits screen horizontally   ![](./star.png "important!")
