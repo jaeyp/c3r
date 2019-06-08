@@ -106,7 +106,7 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 * **:%!xxd -r**	: Turns back to text mode  
 #### Further reading
 * **:help**  ![](./star.png "important!")
-* **:help quickref**  ![](./star.png "important!")  
+* **:help quickref**  
 > ##### About visual mode
 > * **:help visual-block**  
 > * **:help visual-operators**  
