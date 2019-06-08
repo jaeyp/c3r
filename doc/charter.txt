@@ -1,4 +1,4 @@
-[C3 Charter]
+[c3 Charter]
 1. We make c3r resources together.
 2. We open and share all c3r resources to everybody.
 3. We are willing to share our knowledge, which we've learned from c3, to anybody who wants to learn from us.
