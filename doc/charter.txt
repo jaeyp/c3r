@@ -1,0 +1,8 @@
+[C3 Charter]
+1. We make c3r resources together.
+2. We open and share all c3r resources to everybody.
+3. We are willing to share our knowledge, which we've learned from c3, to anybody who wants to learn from us.
+
+[Terms]
+c3 - Conestoga Coding Club
+c3r - Conestoga Coding Club Repository (https://github.com/jaeyp/c3r)
