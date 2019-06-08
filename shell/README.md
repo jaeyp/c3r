@@ -38,10 +38,10 @@ _zsh_ is similar to ksh, but it also includes many features from csh.
 
 ## Common Bash commands and Linux utilities
 * **man** : an interface to the on-line reference manuals
-```Examples
+```
 man cat  
-man 2 lseek // lseek is a function from unistd.h which provides access to the POSIX operating system API.  
-man 3 printf // printf is a function from stdio.h which is a part of C library to perform Input/Output operations.  
+man 2 lseek		# lseek is a function from unistd.h which provides access to the POSIX operating system API.  
+man 3 printf	# printf is a function from stdio.h which is a part of C library to perform Input/Output operations.  
 ```
 
 ## _.bashrc_ templates
