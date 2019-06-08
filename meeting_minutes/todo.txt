@@ -1,4 +1,9 @@
 shell
 vi
+linux filesystem hierarchy
 build system (makefile, CMake)
-
+git
+c++
+python
+alogorithm
+coding challenge questions

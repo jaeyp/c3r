@@ -1,4 +1,6 @@
 Contents
 1. Setup Amazon EC2
-2. Setup Development Evnironment on EC2 (Ubuntu)
+2. Setup Linux Development Evnironment on EC2 (Ubuntu)
 3. ..
+
+https://www.youtube.com/watch?v=uK0xXFZtJ8Q

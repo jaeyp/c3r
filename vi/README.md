@@ -106,11 +106,11 @@ You can also use arrow keys or page-up/page-down keys or home/end keys
 * **:%!xxd -r**	: Turns back to text mode  
 #### Further reading
 * **:help**  ![](./star.png "important!")
+* **:help quickref**  ![](./star.png "important!")  
 > ##### About visual mode
 > * **:help visual-block**  
 > * **:help visual-operators**  
 > * **:help blockwise-operators**  
-
 ---
 
 ## Ctags and Taglist and Cscope
