@@ -8,9 +8,13 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ---
 
-## 1. shell
+## 1. Linux development environment
+### 1-1. shell
 [shell reference](https://github.com/jaeyp/c3r/tree/master/shell)
 
-## 2. vi/vim
+### 1-2. vi/vim
 [vi/vim reference](https://github.com/jaeyp/c3/tree/master/vi)
+
+### 1-3. filesystem hierarchy
+
 

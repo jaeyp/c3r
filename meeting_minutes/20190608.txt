@@ -1,6 +1,9 @@
 Contents
+0. A brief introduction of Linux history
 1. Setup Amazon EC2
 2. Setup Linux Development Evnironment on EC2 (Ubuntu)
-3. ..
+2-1. shell
+2-2. vi editor
+2-3. Linux filesystem hierarchy
 
 https://www.youtube.com/watch?v=uK0xXFZtJ8Q
