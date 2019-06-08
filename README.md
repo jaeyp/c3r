@@ -12,7 +12,7 @@ Conestoga Coding Club Repository since June 8, 2019
 ---
 
 ## 0. Amazon EC2
-[reference](https://github.com/jaeyp/c3r/ec2/README.md)
+[reference](https://github.com/jaeyp/c3r/tree/master/ec2)
 
 ---
 
