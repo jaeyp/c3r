@@ -11,6 +11,11 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ---
 
+## 0. Amazon EC2
+[reference](https://github.com/jaeyp/c3r/ec2/README.md)
+
+---
+
 ## 1. Linux development environment
 ### 1-1. shell
 [shell reference](https://github.com/jaeyp/c3r/tree/master/shell)
