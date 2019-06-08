@@ -9,3 +9,11 @@ alogorithm
 coding challenge questions
 
 tcp/ip
+concurrent programming
+
+
+Assignments
+1. Adding at least five common shell commands with most useful examples to shell/README.md (jayden and yilong)
+2. Getting accustomed to using vi editor (jayden and yilong)
+3. Having some modification of the default .bashrc file (jayden and yilong)
+4. Adding git section to c3r (jaey)
