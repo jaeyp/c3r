@@ -15,6 +15,6 @@ Conestoga Coding Club Repository since June 8, 2019
 ### 1-2. vi/vim
 [vi/vim reference](https://github.com/jaeyp/c3/tree/master/vi)
 
-### 1-3. filesystem hierarchy
-
+### 1-3. FHS (Filesystem Hierarchy Standard)
+[latest release](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)  
 
