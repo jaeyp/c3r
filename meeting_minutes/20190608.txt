@@ -7,3 +7,7 @@ Contents
 2-3. Linux filesystem hierarchy
 
 https://www.youtube.com/watch?v=uK0xXFZtJ8Q
+
+Assignments
+1. Adding at least five common shell commands with best examples to shell/README.md
+2. Getting accustomed to using vi editor

@@ -1,8 +1,8 @@
 shell
 vi
 linux filesystem hierarchy
-build system (makefile, CMake)
 git
+build system (makefile, CMake)
 c++
 python
 alogorithm
