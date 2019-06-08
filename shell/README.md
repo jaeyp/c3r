@@ -40,7 +40,7 @@ _zsh_ is similar to ksh, but it also includes many features from csh.
 * **man** : an interface to the on-line reference manuals
 ```c
 // check this manual has only section 1  
-man -a cat	// cat is executable program  
+man -a cat	// cat is a executable program  
 // open reference manual section 2 of write  
 man 2 write	// write(2) is a function from unistd.h which provides access to the POSIX operating system API.  
 // the manual section of printf is 3  
