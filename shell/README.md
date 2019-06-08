@@ -36,6 +36,10 @@ _zsh_ is similar to ksh, but it also includes many features from csh.
 [Reference Manual](https://tiswww.case.edu/php/chet/bash/bashref.html#Shell-Syntax)  
 [Programming - Introduction HOW-TO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)  
 
+## _.bashrc_ templates
+[Jayden's]()  
+[Yiloing's]()  
+
 ## Common Bash commands and Linux utilities
 * **man** : an interface to the on-line reference manuals
 ```c
@@ -46,8 +50,4 @@ man 2 write	// write(2) is a function from unistd.h which provides access to the
 // the manual section of printf is 3  
 man printf	// printf(3) is a function from stdio.h which is a part of C library to perform Input/Output operations.  
 ```
-
-## _.bashrc_ templates
-[Jayden's]()  
-[Yiloing's]()  
 
