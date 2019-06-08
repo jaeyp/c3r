@@ -39,12 +39,12 @@ _zsh_ is similar to ksh, but it also includes many features from csh.
 ## Common Bash commands and Linux utilities
 * **man** : an interface to the on-line reference manuals
 ```c
-// check this manual has section 1  
-man cat	// cat is executable program  
+// check this manual has only section 1  
+man -a cat	// cat is executable program  
 // open reference manual section 2 of write  
-man 2 write	// write(2) is a function from unistd.h which provides access to **the POSIX operating system API**.  
-// check printf manual section is 3  
-man printf	// printf(3) is a function from stdio.h which is a part of **C library** to perform Input/Output operations.  
+man 2 write	// write(2) is a function from unistd.h which provides access to the POSIX operating system API.  
+// the manual section of printf is 3  
+man printf	// printf(3) is a function from stdio.h which is a part of C library to perform Input/Output operations.  
 ```
 
 ## _.bashrc_ templates
