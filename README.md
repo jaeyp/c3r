@@ -21,6 +21,8 @@ Conestoga Coding Club Repository since June 8, 2019
 ### 1-3. FHS (Filesystem Hierarchy Standard)
 [latest release](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)  
 
+---
+
 ## x. Other references
 ### markdown
 [markdown reference](https://github.com/jaeyp/markdown)
