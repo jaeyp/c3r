@@ -31,6 +31,8 @@ Conestoga Coding Club Repository since June 8, 2019
 
 #### snappy vs apt packages on Ubuntu
 
+---
+
 ## 2. Git
 
 ---
