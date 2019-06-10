@@ -6,4 +6,20 @@ Contents
 2-2. vi editor
 2-3. Linux filesystem hierarchy
 
+Individual assignments
+Jayden
+- sudoer section
+- adding 10 more common shell commands with most useful examples
+- .bashrc
+- practice shell command and vi editor
+
+Yilong
+- how to setup Amazon EC2 (c3r/ec2)
+- .bashrc
+- practice shell command and vi editor
+
+Jaey
+- Git section
+
+How to pronounce Linux
 https://www.youtube.com/watch?v=uK0xXFZtJ8Q
