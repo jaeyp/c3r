@@ -27,9 +27,9 @@ Conestoga Coding Club Repository since June 8, 2019
 [latest release](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)  
 
 ### 1.4. Miscellaneous
-#### sudoers
+#### [sudoers]()
 
-#### snappy vs apt packages on Ubuntu
+#### [snappy vs apt packages on Ubuntu]()
 
 ---
 
