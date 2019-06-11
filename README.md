@@ -47,4 +47,4 @@ Conestoga Coding Club Repository since June 8, 2019
 ---
 
 ## Other references
-### [markdown](https://github.com/jaeyp/markdown)
+#### [markdown](https://github.com/jaeyp/markdown)
