@@ -32,10 +32,20 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ---
 
-## 3. Book Study
-#### [The C++ Programming Language](https://github.com/jaeyp/c3r/tree/master/book/the_c%2B%2B_programming_language)  
+## 3. Study
+#### [The C++ Programming Language](https://github.com/jaeyp/c3r/tree/master/book/the_c%2B%2B_programming_language) (book)  
 
-#### [Introduction to Algorythms](https://github.com/jaeyp/c3r/tree/master/book/introduction_to_algorythms)  
+#### [Introduction to Algorythms](https://github.com/jaeyp/c3r/tree/master/book/introduction_to_algorythms) (book)  
+
+---
+
+## 4. Challenge
+#### [CodeForces](https://codeforces.com/)
+[Solution]()
+
+---
+
+## 5. Project
 
 ---
 
