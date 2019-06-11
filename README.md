@@ -20,15 +20,13 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ### [vi/vim](https://github.com/jaeyp/c3/tree/master/vi)
 
+### [git]()
+
 ### [FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) (Filesystem Hierarchy Standard)  
 
 ### Miscellaneous
 > * [sudoers]()
 > * [snappy vs apt packages on Ubuntu]()
-
----
-
-## Git
 
 ---
 
@@ -49,5 +47,4 @@ Conestoga Coding Club Repository since June 8, 2019
 ---
 
 ## Other references
-### markdown
-[markdown reference](https://github.com/jaeyp/markdown)
+### [markdown](https://github.com/jaeyp/markdown)
