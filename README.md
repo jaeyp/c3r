@@ -17,18 +17,14 @@ Conestoga Coding Club Repository since June 8, 2019
 ---
 
 ## 1. Linux development environment
-### 1-1. shell
-[reference](https://github.com/jaeyp/c3r/tree/master/shell)
+### 1-1. [shell](https://github.com/jaeyp/c3r/tree/master/shell)
 
-### 1-2. vi/vim
-[reference](https://github.com/jaeyp/c3/tree/master/vi)
+### 1-2. [vi/vim](https://github.com/jaeyp/c3/tree/master/vi)
 
-### 1-3. FHS (Filesystem Hierarchy Standard)
-[latest release](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)  
+### 1-3. [FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) (Filesystem Hierarchy Standard)  
 
 ### 1.4. Miscellaneous
 #### [sudoers]()
-
 #### [snappy vs apt packages on Ubuntu]()
 
 ---
@@ -38,11 +34,9 @@ Conestoga Coding Club Repository since June 8, 2019
 ---
 
 ## 3. Book Study
-### 3-1 The C++ Programming Language
-[link](https://github.com/jaeyp/c3r/tree/master/book/the_c%2B%2B_programming_language)  
+### 3-1 [The C++ Programming Language](https://github.com/jaeyp/c3r/tree/master/book/the_c%2B%2B_programming_language)  
 
-### 3-2 Introduction to Algorythms
-[link](https://github.com/jaeyp/c3r/tree/master/book/introduction_to_algorythms)  
+### 3-2 [Introduction to Algorythms](https://github.com/jaeyp/c3r/tree/master/book/introduction_to_algorythms)  
 
 ---
 
