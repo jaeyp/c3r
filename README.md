@@ -10,12 +10,12 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ---
 
-## 0. Amazon EC2
+### 0. Amazon EC2
 #### [reference](https://github.com/jaeyp/c3r/tree/master/ec2)
 
 ---
 
-## 1. Linux development environment
+### 1. Linux development environment
 ### [shell](https://github.com/jaeyp/c3r/tree/master/shell)
 
 ### [vi/vim](https://github.com/jaeyp/c3/tree/master/vi)
@@ -28,27 +28,26 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ---
 
-## 2. Git
+### 2. Git
 
 ---
 
-## 3. Study
+### 3. Study
 #### [The C++ Programming Language](https://github.com/jaeyp/c3r/tree/master/book/the_c%2B%2B_programming_language) (book)  
 
 #### [Introduction to Algorythms](https://github.com/jaeyp/c3r/tree/master/book/introduction_to_algorythms) (book)  
 
 ---
 
-## 4. Challenge
-#### [CodeForces](https://codeforces.com/)
-[Solution]()
+### 4. Challenge
+#### [CodeForces]()
 
 ---
 
-## 5. Project
+### 5. Project
 
 ---
 
-## x. Other references
+### x. Other references
 ### markdown
 [markdown reference](https://github.com/jaeyp/markdown)
