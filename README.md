@@ -34,7 +34,7 @@ Conestoga Coding Club Repository since June 8, 2019
 #### [Introduction to Algorythms](https://github.com/jaeyp/c3r/tree/master/book/introduction_to_algorythms)  
 
 ---
-
+<!-- Comments out future plans
 ## Opensource Analysis
 
 ---
@@ -47,6 +47,7 @@ Conestoga Coding Club Repository since June 8, 2019
 ## Project
 
 ---
+-->
 
 ## Other references
 #### [markdown](https://github.com/jaeyp/markdown)
