@@ -14,6 +14,12 @@
 
 _This image was created by jaeyp_  
 
+### HEADs
+* **HEAD** names the commit on which you based the changes in the working tree.  
+* **FETCH_HEAD** records the branch which you fetched from a remote repository with your last git fetch invocation.  
+* **ORIG_HEAD** is created by commands that move your HEAD in a drastic way, to record the position of the HEAD before their operation, so that you can easily change the tip of the branch back to the state before you ran them.  
+* **MERGE_HEAD** records the commit(s) which you are merging into your branch when you run git merge.  
+
 ---
 
 ## Index
@@ -35,6 +41,16 @@ _This image was created by jaeyp_
 ---
 
 ## References
+```bash
+# Git all commands  
+~$ git help -a  
+
+# Git manuals  
+~$ git help -m  
+
+# Git guides  
+~$ git help -g  	
+```
 [Bitbucket Tutorials](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)  
 [Understanding Git - Index](https://hackernoon.com/understanding-git-index-4821a0765cf)  
 [Git original document](https://github.com/git/git/tree/master/Documentation)  
