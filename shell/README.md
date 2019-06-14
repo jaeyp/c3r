@@ -51,3 +51,52 @@ man 2 write	// write(2) is a function from unistd.h which provides access to the
 man printf	// printf(3) is a function from stdio.h which is a part of C library to perform Input/Output operations.  
 ```
 
+* **cd** : an interface to change the current directory
+```c
+// move to the root directory
+cd /	// '/' represents the first directory in your filesystem hierarchy  
+// move to the home directory
+cd	or	cd ~	// '~' represents home directory  
+// move to the parent directory
+cd ..	// '..' represents parent directory  
+```
+
+* **ls** : an interface to list directory contents of files and directories
+```c
+// dispaly long listing information about the file/directory
+ls -l
+// display all the hidden files in the directory in long listing  
+ls -al
+// display all the hidden files in the directory in long listing with special character
+ls -alF	// 'F' classifies the file with different special character for different kind of files
+		// / - directory
+		// nothing - file
+		// @ - link file
+		// * - executable file
+```
+
+* **mkdir** : an interface to create a directory
+```c
+// create a directory named 'mom'
+mkdir mom  
+// create a directory named 'mom', set to specific permission  
+mkdir -m 644 mom  or  mkdir -m u=rw,g=r,o=r mom	// 644 represents that the user can read and write, and group and others can only read  
+```
+
+* **grep** : an interface to search for a specified text in a file
+```c
+// search for the string 'command' in the file named 'mom' insensitively
+grep -i "command" mom
+// search for the string 'command' in all the files under the current directory 
+grep -r "command" *  
+```
+
+* **ps** : an interface to display processes running on the system. It comes with 2 systax styles and here is UNIX/LINUX style below
+```c
+// display every process on the system
+ps -e
+// display every process on the system in full format listing  
+ps -ef
+// display the processes named partially 'apache'
+ps -ef | grep apache
+```
