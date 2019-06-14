@@ -5,37 +5,30 @@ https://www.atlassian.com/git/tutorials
 
 ## Dataflows
 ![](./git.dataflows.png)
+[reference](https://www.patrickzahnd.ch/blog.html)
 
-## Index
-### project/.git/index
-![](./git.index.format.png)
+---
 
 ## Repository
 ### project/.git/objects
 ![](./git.repository.svg)  
 
+---
+
+## Index
+### project/.git/index
+![](./git.index.format.png)
+
+---
+
+## Utilities
+### decomp.py
+* decompressing object file using zlib  
+* calculating sha-1 hash sum from decompressed data  
+![code](./decomp.py)  
+
+---
+
 ## Collaborating
-### Syncing
-[git remote]()  
-[git fetch]()  
-[git push]()  
-[git pull]()  
-
-### Making a Pull Request
-[How it works]()  
-[Example]()  
-[Where to go from here]()  
-
-### Using branches
-[git branch]()  
-[git checkout]()  
-[git merge]()  
-[Merge conflicts]()  
-[Merge strategies]()  
-
-### Comparing Workflows
-[Centralized Workflow]()  
-[Feature Branch Workflow]()  
-[Gitflow Workflow]()  
-[Forking Workflow]()  
+[reference](https://www.atlassian.com/git/tutorials/syncing)
 
