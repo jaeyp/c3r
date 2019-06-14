@@ -3,6 +3,10 @@ https://www.atlassian.com/git/tutorials
 
 ---
 
+## Repository
+### project/.git/objects
+![](./git.repository.svg)  
+
 ## Collaborating
 ### Syncing
 [git remote]()  
