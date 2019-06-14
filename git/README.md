@@ -1,5 +1,4 @@
 # Git Reference
-https://www.atlassian.com/git/tutorials
 
 ---
 
@@ -12,20 +11,22 @@ https://www.atlassian.com/git/tutorials
 ## Repository
 ### project/.git/objects
 ![](./git.repository.svg)  
+This image was created by jaeyp  
 
 ---
 
 ## Index
 ### project/.git/index
-![](./git.index.format.png)
+![](./git.index.format.png)  
+This image was created by jaeyp
 
 ---
 
 ## Utilities
 ### decomp.py
-* decompressing object file using zlib  
-* calculating sha-1 hash sum from decompressed data  
-![code](./decomp.py)  
+* Decompressing object file using zlib  
+* Calculating SHA-1 hash sum from decompressed data  
+[code](./decomp.py)  
 
 ---
 
