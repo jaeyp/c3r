@@ -3,7 +3,7 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ### members
 [Jaehyun Park](https://jaeyp.github.io/) starting member from June 8, 2019  
-[Jayden Lee]() starting member from June 8, 2019  
+[Jayden Lee](https://nowhh01.github.io/) starting member from June 8, 2019  
 [Yilong Yu]() starting member from June 8, 2019  
 
 ### [charter](https://github.com/jaeyp/c3r/blob/master/doc/charter)
