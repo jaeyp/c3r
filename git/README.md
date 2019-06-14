@@ -10,6 +10,7 @@
 
 ## Repository
 ### project/.git/objects
+<img src="./vi.modes.png" alt="vi three modes" width="1000"/>
 ![](./git.repository.svg)  
 This image was created by jaeyp  
 
