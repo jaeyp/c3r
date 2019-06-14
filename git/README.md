@@ -29,8 +29,8 @@ _This image was created by jaeyp_
 * Calculating SHA-1 hash sum from decompressed data  
 [code](./decomp.py)  
 
-### Other files
-[.gitconfig](./.gitconfig)  
+### .gitconfig
+[reference (jaeyp)](./gitconfig_jaeyp)  
 
 ---
 
