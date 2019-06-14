@@ -4,21 +4,21 @@
 
 ## Dataflows
 ![](./git.dataflows.png)
-[reference](https://www.patrickzahnd.ch/blog.html)
+[from patrick zahnd's blog](https://www.patrickzahnd.ch/blog.html)
 
 ---
 
 ## Repository
 ### project/.git/objects
 <img src="./git.repository.svg" alt="git repository objects" width="1000"/>  
-**_This image was created by jaeyp_**  
+_This image was created by jaeyp_  
 
 ---
 
 ## Index
 ### project/.git/index
 ![](./git.index.format.png)  
-**_This image was created by jaeyp_**  
+_This image was created by jaeyp_  
 
 ---
 
