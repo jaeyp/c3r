@@ -23,11 +23,14 @@ _This image was created by jaeyp_
 
 ---
 
-## Utilities
+## Utilities and files
 ### decomp.py
 * Decompressing object file using zlib  
 * Calculating SHA-1 hash sum from decompressed data  
 [code](./decomp.py)  
+
+### Other files
+[.gitconfig](./.gitconfig)  
 
 ---
 
