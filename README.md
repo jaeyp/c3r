@@ -17,7 +17,7 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ### [vi/vim](https://github.com/jaeyp/c3/tree/master/vi)
 
-### [git](https://github.com/jaeyp/c3/tree/master/git)
+### [Git](https://github.com/jaeyp/c3/tree/master/git)
 
 ### [CMake](https://github.com/jaeyp/c3/tree/master/cmake)
 
