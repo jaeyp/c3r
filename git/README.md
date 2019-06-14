@@ -36,4 +36,4 @@ _This image was created by jaeyp_
 [Understanding Git - Index](https://hackernoon.com/understanding-git-index-4821a0765cf)  
 [Git original document](https://github.com/git/git/tree/master/Documentation)  
 [Git index format from original document](https://github.com/git/git/blob/master/Documentation/technical/index-format.txt)  
-
+[Types of git objects](https://matthew-brett.github.io/curious-git/git_object_types.html)
