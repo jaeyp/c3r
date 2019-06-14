@@ -1,4 +1,4 @@
-Contents
+[Contents]
 0. A brief introduction of Linux history
 1. Setup Amazon EC2
 2. Setup Linux Development Evnironment on EC2 (Ubuntu)
@@ -6,20 +6,21 @@ Contents
 2-2. vi editor
 2-3. Linux filesystem hierarchy
 
-Individual assignments
+[Individual assignments]
 Jayden
-- sudoer section
+- adding sudoer section
 - adding 10 more common shell commands with most useful examples
-- .bashrc
-- practice shell command and vi editor
+- making own .bashrc
+- practice of shell command and vi editor
 
 Yilong
-- how to setup Amazon EC2 (c3r/ec2)
-- .bashrc
-- practice shell command and vi editor
+- adding Amazon EC2 section in c3r/ec2/README.md (howto + screenshots)
+- making own .bashrc
+- practice of shell command and vi editor
 
 Jaey
-- Git section
+- adding Git section
+
 
 How to pronounce Linux
 https://www.youtube.com/watch?v=uK0xXFZtJ8Q
