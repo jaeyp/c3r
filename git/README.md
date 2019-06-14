@@ -3,6 +3,13 @@ https://www.atlassian.com/git/tutorials
 
 ---
 
+## Dataflows
+![](./git.dataflows.png)
+
+## Index
+### project/.git/index
+![](./git.index.format.png)
+
 ## Repository
 ### project/.git/objects
 ![](./git.repository.svg)  
