@@ -10,8 +10,10 @@
 
 ## Repository
 ### project/.git/objects
-<img src="./git.repository.svg" alt="vi three modes" width="1000"/>  
+<img src="./git.repository.svg" alt="git repository objects" width="1000"/>  
+```
 ![](./git.repository.svg)  
+```
 This image was created by jaeyp  
 
 ---
