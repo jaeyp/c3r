@@ -115,7 +115,7 @@ _This image was created by jaeyp_
 #                A'--B'--C' origin/feature
 #               /
 #  D---E---F---G master
-~$ git rebase master origin/feature		# git rebase <upstream> <repository>
+~$ git rebase master origin/feature	# git rebase <upstream> <repository>
 # Update remote master repository
 ~$ git push origin master
 ```
