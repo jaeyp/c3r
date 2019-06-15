@@ -4,9 +4,9 @@
 
 ## Dataflows
 ![](./git.dataflows.png)  
-* git revert  
 [from patrick zahnd's blog](https://www.patrickzahnd.ch/blog.html)
-
+### Other commands
+* git revert  
 ---
 
 ## Repository
