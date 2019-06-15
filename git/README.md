@@ -5,8 +5,9 @@
 ## Dataflows
 ![](./git.dataflows.png)  
 [from patrick zahnd's blog](https://www.patrickzahnd.ch/blog.html)
-### Other commands
-* git revert  
+### Commands
+* **git revert**  
+* **git stash** - The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 ---
 
 ## Repository
