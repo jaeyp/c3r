@@ -46,6 +46,28 @@ _This image was created by jaeyp_
 
 ---
 
+## Collaborating
+```bash
+# Create new branch
+$ git branch hotfix
+# Switch to new branch
+$ git checkout hotfix
+
+# Push current work
+# 	-u: add upstream reference, then we can use argument-less git-push later.
+$ git push -u origin hotfix
+# Push another work
+$ git push
+
+# Merge hotfix to master
+$ git checkout master
+$ git fetch origin hotfix
+$ git merge origin/hotfix
+$ git push origin master
+```
+
+---
+
 ## References
 ```bash
 # Git all commands  
