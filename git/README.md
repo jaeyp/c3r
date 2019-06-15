@@ -104,12 +104,18 @@ _This image was created by jaeyp_
 ```bash
 # Switch branch to master
 ~$ git checkout master
-# Fetch remote feature branch and merge it to local master branch as below
+# Fetch a remote feature branch
+~$ git fetch origin feature		# update the remote feature branch
+# Merge it to a local master branch as below
 #        A---B---C origin/feature (remote feature branch)
 #       /         \
 #  D---E---F---G---H master (local master branch)
-~$ git fetch origin feature	# update the remote feature branch
-~$ git merge origin/feature	# merge origin/feature to local master
+~$ git merge origin/feature		# merge origin/feature to local master
+# or Rebase a remote feature branch to a local mster
+#                A'--B'--C' origin/feature
+#               /
+#  D---E---F---G master
+~$ git rebase master origin/feature		# git rebase <upstream> <repository>
 # Update remote master repository
 ~$ git push origin master
 ```
