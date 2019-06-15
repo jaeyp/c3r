@@ -73,8 +73,10 @@ _This image was created by jaeyp_
 # Check conflict
 ~$ git status
 
-# resolve conflict
+# Resolve conflict manually
+# The area where a pair of conflicting changes happened is marked with markers <<<<<<<, =======, and >>>>>>>.
 ~$ vi <conflict file>
+# Add resolved contents to the index
 ~$ git add <conflict file>
 # Conclude the conflict merge/rebase
 ~$ git merge/rebase --continue
