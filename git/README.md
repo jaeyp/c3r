@@ -10,10 +10,10 @@
 
 ## Repository
 ### Types of git objects
-* commit object 
-* tree object 
-* blob object  
-* annotated tag object  
+* **commit** object 
+* **tree** object 
+* **blob** object  
+* **tag** object  
 
 ### project/.git/objects
 <img src="./git.repository.svg" alt="git repository objects" width="1000"/>  
