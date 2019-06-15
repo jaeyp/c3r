@@ -65,9 +65,10 @@ _This image was created by jaeyp_
 ```bash
 # Update the remote-tracking branches
 ~$ git fetch
-
 # Merge or rebase all updates fetched to working directory
 ~$ git merge/rebase
+# or Do it together
+~$ git pull
 
 # Check conflict
 ~$ git status
