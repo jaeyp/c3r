@@ -47,6 +47,9 @@ _This image was created by jaeyp_
 ---
 
 ## Collaborating
+### Centralized Workflow
+
+### Feature Branch Workflow
 ```bash
 # Create new branch
 ~$ git branch hotfix
@@ -70,6 +73,10 @@ _This image was created by jaeyp_
 # Delete a remote branch 'origin/hotfix'
 ~$ git push origin --delete hotfix
 ```
+
+### Gitflow Workflow
+
+### Forking Workflow
 
 ---
 
