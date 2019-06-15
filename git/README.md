@@ -3,7 +3,8 @@
 ---
 
 ## Dataflows
-![](./git.dataflows.png)
+![](./git.dataflows.png)  
+* git revert  
 [from patrick zahnd's blog](https://www.patrickzahnd.ch/blog.html)
 
 ---
