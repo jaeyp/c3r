@@ -61,31 +61,65 @@ _This image was created by jaeyp_
 ---
 
 ## Collaborating
-### Centralized Workflow
+### Basic Conflict Workflow
+```bash
+# Update the remote-tracking branches
+~$ git fetch
+
+# Merge or rebase all updates fetched to working directory
+~$ git merge/rebase
+
+# Check conflict
+~$ git status
+
+# resolve conflict
+~$ vi <conflict file>
+~$ git add <conflict file>
+# Conclude the conflict merge/rebase
+~$ git merge/rebase --continue
+
+# Update remote repository
+~$ git push origin master
+```
 
 ### Feature Branch Workflow
+* Create new local feature branch  
 ```bash
 # Create new branch
-~$ git branch hotfix
+~$ git branch feature
 # Switch to new branch
-~$ git checkout hotfix
+~$ git checkout feature
+```
 
+* Update local feature works to remote feature branch  
+```bash
 # Push current work
 # 	-u: add upstream reference, then we can use argument-less git-push later.
-~$ git push -u origin hotfix
+~$ git push -u origin feature
 # Push another work
 ~$ git push
+```
 
-# Merge hotfix to master
+* Merge feature branch to master branch  
+```bash
+# Switch branch to master
 ~$ git checkout master
-~$ git fetch origin hotfix
-~$ git merge origin/hotfix
+# Fetch remote feature branch and merge it to local master branch as below
+#        A---B---C origin/feature (remote feature branch)
+#       /         \
+#  D---E---F---G---H master (local master branch)
+~$ git fetch origin feature	# update the remote feature branch
+~$ git merge origin/feature	# merge origin/feature to local master
+# Update remote master repository
 ~$ git push origin master
+```
 
-# Delete a local branch 'hotfix'
-~$ git branch -d hotfix
-# Delete a remote branch 'origin/hotfix'
-~$ git push origin --delete hotfix
+* Delete feature branch merged  
+```bash
+# Delete a local branch 'feature'
+~$ git branch -d feature
+# Delete a remote branch 'origin/feature'
+~$ git push origin --delete feature
 ```
 
 ### Gitflow Workflow
