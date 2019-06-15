@@ -5,8 +5,9 @@
 ## Dataflows
 ![](./git.dataflows.png)  
 [from patrick zahnd's blog](https://www.patrickzahnd.ch/blog.html)
-### Other commands
-* git revert  
+### Commands
+* **git revert**  
+* **git stash** - The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 ---
 
 ## Repository
@@ -87,7 +88,7 @@ _This image was created by jaeyp_
 ```
 
 ### Feature Branch Workflow
-* Create new local feature branch  
+* Create new local feature branch (feature developer)  
 ```bash
 # Create new branch
 ~$ git branch feature
@@ -95,7 +96,7 @@ _This image was created by jaeyp_
 ~$ git checkout feature
 ```
 
-* Update local feature works to remote feature branch  
+* Update local feature works to remote feature branch (feature developer)  
 ```bash
 # Push current work
 # 	-u: add upstream reference, then we can use argument-less git-push later.
@@ -104,7 +105,7 @@ _This image was created by jaeyp_
 ~$ git push
 ```
 
-* Merge feature branch to master branch  
+* Merge feature branch to master branch (source code revision manager)  
 ```bash
 # Switch branch to master
 ~$ git checkout master
@@ -131,10 +132,6 @@ _This image was created by jaeyp_
 # Delete a remote branch 'origin/feature'
 ~$ git push origin --delete feature
 ```
-
-### Gitflow Workflow
-
-### Forking Workflow
 
 ---
 
