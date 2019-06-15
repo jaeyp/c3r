@@ -64,6 +64,11 @@ _This image was created by jaeyp_
 ~$ git fetch origin hotfix
 ~$ git merge origin/hotfix
 ~$ git push origin master
+
+# Delete a local branch 'hotfix'
+~$ git branch -d hotfix
+# Delete a remote branch 'origin/hotfix'
+~$ git push origin --delete hotfix
 ```
 
 ---
