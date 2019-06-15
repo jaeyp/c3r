@@ -16,6 +16,16 @@
 * **tag** object  
 
 ### project/.git/objects
+```bash
+# Display commit logs (revision history)  
+~$ git log --oneline  
+# Display the object type  
+~$ git cat-file <object> -t  
+# Display the object contents  
+~$ git cat-file <object> -t  
+# Display the tree-object contents  
+~$ git ls-tree <object>  
+```
 <img src="./git.repository.svg" alt="git repository objects" width="1000"/>  
 
 _This image was created by jaeyp_  
@@ -30,6 +40,10 @@ _This image was created by jaeyp_
 
 ## Index
 ### project/.git/index
+```bash
+# Display staged objects  
+~$ git ls-files -s  
+```
 ![](./git.index.format.png)  
 _This image was created by jaeyp_  
 
