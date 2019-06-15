@@ -133,10 +133,6 @@ _This image was created by jaeyp_
 ~$ git push origin --delete feature
 ```
 
-### Gitflow Workflow
-
-### Forking Workflow
-
 ---
 
 ## References
