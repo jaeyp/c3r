@@ -24,7 +24,7 @@
 # Display the object type  
 ~$ git cat-file <object> -t  
 # Display the object contents  
-~$ git cat-file <object> -t  
+~$ git cat-file <object> -p  
 # Display the tree-object contents  
 ~$ git ls-tree <object>  
 ```
