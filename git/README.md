@@ -1,5 +1,5 @@
 # Git
-(written by **Jaehyun**)  
+(_written by **Jaehyun**_)  
 ## Dataflows
 ![](./git.dataflows.png)  
 [from patrick zahnd's blog](https://www.patrickzahnd.ch/blog.html)
