@@ -1,5 +1,5 @@
 ## how to setup Amazone EC2 
-(written by Yilong)  
+(written by **Yilong**)  
 ### How to create an account/log in
 
 1. If you do not have an AWS account, please go to <a href="https://aws.amazon.com">AWS Webpage</a> to <b><i>Create an AWS Account</i></b>
