@@ -51,9 +51,9 @@ _This image was created by **Jaehyun**_
 
 ## Utilities and files
 ### decomp.py
+[source code](./decomp.py)  
 * Decompressing object file using zlib  
 * Calculating SHA-1 hash sum from decompressed data  
-[code](./decomp.py)  
 
 ### .gitconfig
 [reference (jaeyp)](./gitconfig_jaeyp)  
