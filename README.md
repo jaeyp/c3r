@@ -11,13 +11,13 @@ Conestoga Coding Club Repository since June 8, 2019
 ---
 
 ## Linux development environment
-### [Amazon EC2](https://github.com/jaeyp/c3r/tree/master/ec2) (written by Yilong)
+### [Amazon EC2](https://github.com/jaeyp/c3r/tree/master/ec2) 
 
-### [shell](https://github.com/jaeyp/c3r/tree/master/shell) (written by Jaehyun)
+### [shell](https://github.com/jaeyp/c3r/tree/master/shell) 
 
-### [vi/vim](https://github.com/jaeyp/c3/tree/master/vi) (written by Jaehyun)
+### [vi/vim](https://github.com/jaeyp/c3/tree/master/vi) 
 
-### [Git](https://github.com/jaeyp/c3/tree/master/git) (written by Jaehyun)
+### [Git](https://github.com/jaeyp/c3/tree/master/git) 
 
 ### [CMake](https://github.com/jaeyp/c3/tree/master/cmake)
 
