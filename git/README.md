@@ -3,7 +3,7 @@
 ## Dataflows
 ![](./git.dataflows.png)  
 [from patrick zahnd's blog](https://www.patrickzahnd.ch/blog.html)
-### Commands
+### Extra Information
 * **git revert**  
 * **git stash** - The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 ---
@@ -28,7 +28,7 @@
 ```
 <img src="./git.repository.svg" alt="git repository objects" width="1000"/>  
 
-_This image was created by Jaehyun_  
+_This image was created by **Jaehyun**_  
 
 ### HEADs
 * **HEAD** names the commit on which you based the changes in the working tree.  
@@ -45,7 +45,7 @@ _This image was created by Jaehyun_
 ~$ git ls-files -s  
 ```
 ![](./git.index.format.png)  
-_This image was created by Jaehyun_  
+_This image was created by **Jaehyun**_  
 
 ---
 
