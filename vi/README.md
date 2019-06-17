@@ -1,5 +1,5 @@
 # vi/vim reference
-
+(written by Jaehyun)
 ## vi modes
 <img src="./vi.modes.png" alt="vi three modes" width="600"/>  
 

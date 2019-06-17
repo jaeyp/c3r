@@ -1,5 +1,5 @@
 # Shell 
-
+(written by Jaehyun)  
 ## Defination
 A **shell** is a program that provides the traditional, text-only user interface for Linux and other Unix-like operating systems.  
 Its primary is to read commands that are typed into a console or terminal window (emulator) in a GUI and then execute them.  
