@@ -1,5 +1,5 @@
 # Shell 
-(written by **Jaehyun**)  
+(_written by **Jaehyun**_)  
 ## Defination
 A **shell** is a program that provides the traditional, text-only user interface for Linux and other Unix-like operating systems.  
 Its primary is to read commands that are typed into a console or terminal window (emulator) in a GUI and then execute them.  
@@ -41,7 +41,7 @@ _zsh_ is similar to ksh, but it also includes many features from csh.
 [Yiloing's]()  
 
 ## Common Bash commands and Linux utilities
-(written by **Jayden**)  
+(_written by **Jayden**_)  
 * **man** : an interface to the on-line reference manuals
 ```bash
 // check this manual has only section 1  
