@@ -41,8 +41,9 @@ _zsh_ is similar to ksh, but it also includes many features from csh.
 [Yiloing's]()  
 
 ## Common Bash commands and Linux utilities
+(written by Jayden)  
 * **man** : an interface to the on-line reference manuals
-```c
+```bash
 // check this manual has only section 1  
 man -a cat	// cat is a executable program  
 // open reference manual section 2 of write  
@@ -52,7 +53,7 @@ man printf	// printf(3) is a function from stdio.h which is a part of C library 
 ```
 
 * **cd** : an interface to change the current directory
-```c
+```bash
 // move to the root directory
 cd /	// '/' represents the first directory in your filesystem hierarchy  
 // move to the home directory
@@ -62,7 +63,7 @@ cd ..	// '..' represents parent directory
 ```
 
 * **ls** : an interface to list directory contents of files and directories
-```c
+```bash
 // dispaly long listing information about the file/directory
 ls -l
 // display all the hidden files in the directory in long listing  
@@ -76,7 +77,7 @@ ls -alF	// 'F' classifies the file with different special character for differen
 ```
 
 * **mkdir** : an interface to create a directory
-```c
+```bash
 // create a directory named 'mom'
 mkdir mom  
 // create a directory named 'mom', set to specific permission  
@@ -84,7 +85,7 @@ mkdir -m 644 mom  or  mkdir -m u=rw,g=r,o=r mom	// 644 represents that the user 
 ```
 
 * **grep** : an interface to search for a specified text in a file
-```c
+```bash
 // search for the string 'command' in the file named 'mom' insensitively
 grep -i "command" mom
 // search for the string 'command' in all the files under the current directory 
@@ -92,7 +93,7 @@ grep -r "command" *
 ```
 
 * **ps** : an interface to display processes running on the system. It comes with 2 systax styles and here is UNIX/LINUX style below
-```c
+```bash
 // display every process on the system
 ps -e
 // display every process on the system in full format listing  
