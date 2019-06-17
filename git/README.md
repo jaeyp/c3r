@@ -28,7 +28,7 @@
 ```
 <img src="./git.repository.svg" alt="git repository objects" width="1000"/>  
 
-_This image was created by jaeyp_  
+_This image was created by Jaehyun_  
 
 ### HEADs
 * **HEAD** names the commit on which you based the changes in the working tree.  
@@ -45,7 +45,7 @@ _This image was created by jaeyp_
 ~$ git ls-files -s  
 ```
 ![](./git.index.format.png)  
-_This image was created by jaeyp_  
+_This image was created by Jaehyun_  
 
 ---
 
