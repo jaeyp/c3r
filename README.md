@@ -23,8 +23,8 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ### Miscellaneous
 > * [FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) (Filesystem Hierarchy Standard)  
-> * [sudoers]()
-> * [snappy vs apt packages on Ubuntu]()
+> * [sudoers](#)
+> * [snappy vs apt packages on Ubuntu](#)
 
 ---
 
@@ -34,20 +34,23 @@ Conestoga Coding Club Repository since June 8, 2019
 #### [Introduction to Algorythms](https://github.com/jaeyp/c3r/tree/master/book/introduction_to_algorythms)  
 
 ---
-<!-- Comments out future plans
-## Opensource Analysis
+
+## Coding Challenge
+(_under planning_)  
+#### [CodeForces](#)
 
 ---
 
-## Coding Challenge
-#### [CodeForces]()
+## Code Hack
+(_under planning_)  
+#### [flask](#)
 
 ---
 
 ## Project
+#### [Hope we can start own projects some day...](#)
 
 ---
--->
 
 ## Other references
 #### [markdown](https://github.com/jaeyp/markdown)
