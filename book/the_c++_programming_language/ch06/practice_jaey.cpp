@@ -194,8 +194,6 @@ public:
 	/* basic 'const' declarations */
 	void TestConst(void)
 	{
-		// Basically 'const' applies to whatever is on its immediate left (other than if there in which case it applies to whatever is its immediate right)
-
 		const int var1 = 10;
 		int var2 = 20;
 		int var3 = 30;
