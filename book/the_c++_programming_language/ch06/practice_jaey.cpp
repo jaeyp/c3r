@@ -208,13 +208,13 @@ public:
 		int const * k2 = &var1;	
 		
 		// 3. k3 is a constant pointer to a variable integer, 
-		//	  you can't modify the value of your pointer, 
+		//    you can't modify the value of your pointer, 
 		//    but you can modify the pointed value.
 		int * const k3 = &var2;
 		var2 *= 2;
 		*k3 *= 2;
-		//k3 = &var3;				// error. it's const pointer.
-		//int * const k3 = &var1;	// error. var1 is constant integer and can't convert constant integer to integer.
+		//k3 = &var3;             // error. it's const pointer.
+		//int * const k3 = &var1; // error. var1 is constant integer and can't convert constant integer to integer.
 		
 		// 4. k4 is a constant pointer of a constant integer.
 		int const * const k4 = &var1;
@@ -232,40 +232,39 @@ public:
 
 	void TestLRvalue(void)
 	{
-		/*
-			Lvalue is an expression that refers to an object. (somthing has identity, cannot be moved)
-			Rvalue no longer exists after an expression. (movable, temporary)
-		*/
+		/*  Lvalue is an expression that refers to an object. (somthing has identity, cannot be moved)
+		 *  Rvalue no longer exists after an expression. (movable, temporary)
+		 */
 
-		int x = 3;			// 3 is rvalue
+		int x = 3;          // 3 is rvalue
 		const int y = x;
-		int z = x + y;		// x + y is rvalue
-		int arr[] = {1, 2};	// {1, 2} is rvalue
+		int z = x + y;      // x + y is rvalue
+		int arr[] = {1, 2}; // {1, 2} is rvalue
 
 
-		int* p = &x;		// unary '&' means 'address of', and it's rvalue (important!)
-		x = *p;				// unary '*' means 'contents of', and it's lvalue (important!)
+		int* p = &x;    // unary '&' means 'address of', and it's rvalue (important!)
+		x = *p;         // unary '*' means 'contents of', and it's lvalue (important!)
 		// We can use address-of operator '&' only for lvalue since rvalue is movable.
-		//&x = 10;			// error, left operand of assignment must be lvalue.
-		//&(&x);			// error, '&' requires lvalue
+		//&x = 10;      // error, left operand of assignment must be lvalue.
+		//&(&x);        // error, '&' requires lvalue
 
-		p = &arr[0];	// &arr[0] is rvalue
-		*(p+1) = 10;	// okay, *(p+1) is lvalue.
-		&(*(p+1));		// okay, *(p+1) is lvalue.
+		p = &arr[0];    // &arr[0] is rvalue
+		*(p+1) = 10;    // okay, *(p+1) is lvalue.
+		&(*(p+1));      // okay, *(p+1) is lvalue.
 
 		std::cout << "\n* lvalue and rvalue *\n"
 			<< std::string("this is rvalue") << std::endl;	// return value of string() is rvalue
 
 		int i, j;
 		x = 1;
-		i = ++x;	// i = 2, x = 2
-		++x = i;	// okay, ++x is lvalue
-		&(++x);		// okay, ++x is lvalue
+		i = ++x;    // i = 2, x = 2
+		++x = i;    // okay, ++x is lvalue
+		&(++x);     // okay, ++x is lvalue
 
 		x = 1;
-		j = x++;	// j = 1, and x comes to 2 after the expression.
-		//x++ = j;	// error, x++ is rvalue
-		//&(x++);	// error, x++ is rvalue
+		j = x++;    // j = 1, and x comes to 2 after the expression.
+		//x++ = j;  // error, x++ is rvalue
+		//&(x++);   // error, x++ is rvalue
 	}
 };
 
