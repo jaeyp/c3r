@@ -3,6 +3,7 @@
 #include <complex>		// std::complex
 #include <vector>		// std::vector
 #include <climits>		// CHAR_BIT
+
 //using namespace std;
 
 void DeclareBasicTypes()
@@ -42,70 +43,70 @@ void DeclareBasicTypes()
 	C ccc;
 	
 	// the complex number:			(5 + 3i)
-						
 	std::complex<double> complex1 = { 5.0, 3.0 };		// use constructor	
-	std::complex<double> complex2{ 5.0, 3.0 };			// use constructor
-	std::complex<double> complex3(3, 2);				// use constructor
-	std::complex<double> complex4();					// use constructor to the default value {0,0}
+	std::complex<double> complex2{ 5.0, 3.0 };		// use constructor
+	std::complex<double> complex3(3, 2);			// use constructor
+	std::complex<double> complex4();			// use constructor to the default value {0,0}
 
 	// vector
 	std::vector<std::string> v1 = { "Hamburger", "Ramen" };	// use list constructor
-	std::vector<double> v2(10, 3.3);						// use constructor: v gets 10 elements initialized to 3.3
+	std::vector<double> v2(10, 3.3);			// use constructor: v gets 10 elements initialized to 3.3
 }
 
 void DeclareFor()
 {
-		std::vector<int> numbers{ 1, 2, 3, 4 };
-		std::vector<int>::iterator pt;				// iterator
+	std::vector<int> numbers{ 1, 2, 3, 4 };
+	std::vector<int>::iterator pt;				// iterator
 		
-		for (int i = 0; i < numbers.size(); i++)
-		{
-			std::cout << numbers[i] << ", ";		// output: 1, 2, 3, 4,
-		}
-		std::cout << '\n';
+	for (int i = 0; i < numbers.size(); i++)
+	{
+		std::cout << numbers[i] << ", ";		// output: 1, 2, 3, 4,
+	}
+	std::cout << '\n';
 		
-		for (pt = numbers.begin(); pt < numbers.end(); pt++)
-		{
-			std::cout << *pt << ", ";				// output: 1, 2, 3, 4,
-		}
-		std::cout << '\n';
+	for (pt = numbers.begin(); pt < numbers.end(); pt++)
+	{
+		std::cout << *pt << ", ";			// output: 1, 2, 3, 4,
+	}
+	std::cout << '\n';
 		
-		for (auto p = numbers.begin(); p != numbers.end(); ++p)
-		{
-			std::cout << *p << ", ";				// output: 1, 2, 3, 4,
-		}		
-		std::cout << '\n';
+	for (auto p = numbers.begin(); p != numbers.end(); ++p)
+	{
+		std::cout << *p << ", ";			// output: 1, 2, 3, 4,
+	}		
+	std::cout << '\n';
 		
-		for (const auto& x : numbers)				// auto is determined by element type of numbers, int.
-		{
-			std::cout << x << ", ";					// output: 1, 2, 3, 4,
-		}
-		std::cout << "\n\n";
+	for (const auto& x : numbers)				// auto is determined by element type of numbers, int.
+	{
+		std::cout << x << ", ";				// output: 1, 2, 3, 4,
+	}
+	std::cout << "\n\n";
 }
 
 void DeclareWithAuto(int& i)
 {
-		auto a1 = i;				// c is an int (not an int&)
-		auto& a2 = i;				// d is an int&
+	auto a1 = i;			// c is an int (not an int&)
+	auto& a2 = i;			// d is an int&
 		
-		//auto aa1{};				// error: cannot deduce a type
-		auto aa2{ 1 };				// list of int with one element
-		auto aa3 = { 1, 2, 3 };		// std::initializer_list<int>
-		auto aa4 = { 1.0, 2.5 };	// std::initializer_list<double>
-		//auto aa5 = { 1.0, 2 };	// error: cannot deduce the type
+	//auto aa1{};			// error: cannot deduce a type
+	auto aa2{ 1 };			// list of int with one element
+	auto aa3 = { 1, 2, 3 };		// std::initializer_list<int>
+	auto aa4 = { 1.0, 2.5 };	// std::initializer_list<double>
+	//auto aa5 = { 1.0, 2 };	// error: cannot deduce the type
 }
 
 void DeclareTypeAliases()
 {
-		// type aliases - when a original name is too long, complicated or ugly
-		//				 when different types required with same name
-		//				 when a specific type is mentioned in one place only to simplify maintenance
-		using Pchar = char*;		// pointer to character
-		using PF = int(*)(double);	// pointer to function taking a double and returning an int
+	// type aliases - when a original name is too long, complicated or ugly
+	//		 when different types required with same name
+	//		 when a specific type is mentioned in one place only to simplify maintenance
+	using Pchar = char*;		// pointer to character
+	using PF = int(*)(double);	// pointer to function taking a double and returning an int
 }
 
 void CheckTypeSize()
 {
+	// bits per byte varies depending on computer architecture
 	std::cout << "Byte:		" << CHAR_BIT << " bits" << std::endl
 		<< "char:		" << sizeof(char) << " bytes" << std::endl
 		<< "int:		" << sizeof(int) << " bytes" << std::endl
