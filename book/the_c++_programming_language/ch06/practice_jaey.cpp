@@ -25,9 +25,8 @@ struct Bar {
 };
 
 struct AlignedBar {
-	/*
-	   This is how to align every member with machine WORD size, 
-	   Even though compiler mostly will add padding bit to make it aligned
+	/*  This is how to align every member with machine WORD size, 
+	 *  Even though compiler mostly will add padding bit to make it aligned.
 	 */
 	alignas(sizeof(size_t)) char c;
 	alignas(sizeof(size_t)) bool b;
@@ -127,11 +126,11 @@ void Chapter6::TestAlignment()
 	std::cout << "\n* Struct Empty *\n"
 		<< "size of struct Empty: " << sizeof(struct Empty) << "\n"
 		<< "size of struct alignas(64) Empty64: " << sizeof(struct Empty64) << std::endl;
-	/* 6.2.8 Sizes */
+
 	std::cout << "\n* Struct Bar *\n";
 	std::cout << "machine word size: " << sizeof(size_t) << "\n"
 		"MEMBER    " << "SIZE\t" << "ALIGN\t" << "ADDRESS" << "\n"
-		/* size:80 = 1 + 1 + 2 + 4 + 8*3 + 16*3 */
+		// size:80 = 1 + 1 + 2 + 4 + 8*3 + 16*3
 		"bar:      " << sizeof(bar) << " (1 + 1 + 2 + 4 + 8*3 + 16*3)" << "\n"
 		"c:        " << sizeof(bar.c) << "\t" << alignof(bar.c) << "\t(" << &(bar) << ")" << "\n"
 		"b:        " << sizeof(bar.b) << "\t" << alignof(bar.b) << "\t(" << &(bar.b) << ")" << "\n"
@@ -148,11 +147,10 @@ void Chapter6::TestAlignment()
 /* struct with aligned members (alignas) */
 void Chapter6::TestAlignment2()
 {	
-	/* 6.2.8 Sizes */
 	std::cout << "\n* Struct Bar with alignment *\n";
 	std::cout << "machine word size: " << sizeof(size_t) << "\n"
 		"MEMBER    " << "SIZE\t" << "ALIGN\t" << "ADDRESS" << "\n"
-		/* size:96 = 8*8 + 16*2 */
+		// size:96 = 8*8 + 16*2
 		"bar2:     " << sizeof(bar2) << " (8*8 + 16*2)" << "\n"
 		"c:        " << sizeof(bar2.c) << "\t" << alignof(bar2.c) << "\t(" << &(bar2) << ")" << "\n"
 		"b:        " << sizeof(bar2.b) << "\t" << alignof(bar2.b) << "\t(" << &(bar2.b) << ")" << "\n"
@@ -169,11 +167,10 @@ void Chapter6::TestAlignment2()
 /* struct with packing */
 void Chapter6::TestAlignment3()
 {	
-	/* 6.2.8 Sizes */
 	std::cout << "\n* Struct Bar with packing *\n";
 	std::cout << "machine word size: " << sizeof(size_t) << "\n"
 		"MEMBER    " << "SIZE\t" << "ALIGN\t" << "ADDRESS" << "\n"
-		/* size:70 = 1 + 1 + 2 + 4 + 8*4 + 16 + 14 */
+		// size:70 = 1 + 1 + 2 + 4 + 8*4 + 16 + 14
 		"bar3:     " << sizeof(bar3) << " (1 + 1 + 2 + 4 + 8*4 + 16 + 14)" << "\n"
 		"c:        " << sizeof(bar3.c) << "\t" << alignof(bar3.c) << "\t(" << &(bar3) << ")" << "\n"
 		"b:        " << sizeof(bar3.b) << "\t" << alignof(bar3.b) << "\t(" << &(bar3.b) << ")" << "\n"
