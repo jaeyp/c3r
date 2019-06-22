@@ -63,6 +63,7 @@ public:
 	void TestAlignment3(void);
 	//void TestStringLiteral(void);
 	void TestConst(void);
+	void TestTypeDeduction(void);
 	void TestLRvalue(void);
 
 private:
@@ -236,7 +237,30 @@ void Chapter6::TestConst()
 	// const member function
 	FuncAsConstMember();
 	
-	//TODO: mutable and const_cast
+	// TODO: mutable and const_cast
+
+	// TODO: const variable vs constexpr variable
+	// the initialization of a const variable can be deferred until run time.
+	// while a constexpr variable must be initialized at compile time.
+	int sz;
+	const int ksz = 10;
+
+	const int asz1 = sz;          // fine, asz1 is const copy of sz
+	//std::array<int, asz1> data; // error, asz1's value unknown at compilation
+
+	//constexpr int asz2 = sz;    // error. sz's value unknown at compilation
+	//std::array<int, asz2> data; // error, asz2's value unknown at compilation
+
+	constexpr int asz2 = ksz;      // fine, ksz is a compile-time constant
+	std::array<int, asz2> data;    // fine, asz2 is constexpr
+
+	// TODO: constexpr function vs inline function
+}
+
+/* auto and decltype() */
+void Chapter6::TestTypeDeduction(void)
+{
+	// TODO:
 }
 
 /* Lvalue and Rvalue */
