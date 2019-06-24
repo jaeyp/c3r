@@ -251,8 +251,8 @@ void Chapter6::TestConst()
 	//constexpr int asz2 = sz;    // error. sz's value unknown at compilation
 	//std::array<int, asz2> data; // error, asz2's value unknown at compilation
 
-	constexpr int asz2 = ksz;      // fine, ksz is a compile-time constant
-	std::array<int, asz2> data;    // fine, asz2 is constexpr
+	constexpr int asz2 = ksz;     // fine, ksz is a compile-time constant
+	std::array<int, asz2> data;   // fine, asz2 is constexpr
 
 	// TODO: constexpr function vs inline function
 }
