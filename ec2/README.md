@@ -38,4 +38,4 @@ You must download it as this is the only chance to store the private key pair fi
 ### Connect with the Server
 
 1. using PuTTY
-(1) Download the PuTTY software from <b><i><a href="www.putty.org">www.putty.org</a></i></b>. Be sure to download the entire package as shown below, as it will include all the needed utilities such as puttygen and pageant.
+(1) Download the PuTTY software from <b><i><a href="https://www.putty.org/">www.putty.org</a></i></b>. Be sure to download the entire package as shown below, as it will include all the needed utilities such as puttygen and pageant.
