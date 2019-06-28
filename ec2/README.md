@@ -74,3 +74,29 @@ Now the PEM file has been converted to a PPK file, it is ready to use the PuTTY 
 
 <img width="495" alt="ec2_PuttyLoginAs" src="https://user-images.githubusercontent.com/41296962/60365221-1bbd5000-99b6-11e9-9b6b-a8ff507db3b8.png">
   
+2. use Xshell
+
+2-1. Download the Xshell from <b><i><a href="https://www.netsarang.com/en/xshell/">www.netsarang.com/en/xshell</a></i></b>.
+
+![xShell](https://user-images.githubusercontent.com/41296962/60365375-8c646c80-99b6-11e9-9119-e10224f54464.PNG)
+
+
+2-2. Choolse the <b><i>Tools</i></b> menu, select <b><i>User Key Manager...</i></b>. 
+
+<img width="490" alt="ec2_xshellTool" src="https://user-images.githubusercontent.com/41296962/60365752-98046300-99b7-11e9-9030-bfc7f10f176d.png">
+
+2-3. In the <b><i>User Keys</i></b> interface, select <b><i>Import...</i></b> button. Import the PEM file you have downloaded and then <b><i>Close</i></b>.
+
+<img width="946" alt="ec2_xshellPEM" src="https://user-images.githubusercontent.com/41296962/60365957-2ed11f80-99b8-11e9-9463-8243084a60f1.png">
+
+2-4. Click <b><i>New...</i></b> in the <b><i>File</i></b> menu to open the <b><i>New Session Properties</i></b> interface. Select <b><i>Connection</i></b> and enter <b><i>Name</i></b> and <b><i>Host</i></b>.
+
+<img width="919" alt="ec2_xshellConnection" src="https://user-images.githubusercontent.com/41296962/60366166-af901b80-99b8-11e9-9060-65c5357d635b.png">
+
+2-5. Select <b><i>Authentication</i></b>. Change <b><i>Method</i></b> to <b><i>Public Key</i></b>; For <b><i>User Name</i></b> field, enter <b><i>ubuntu</i></b> as the default name; For <b><i>User Key</i></b> field, use the drop down to select the PEM file you just have imported. 
+
+<img width="921" alt="ec2_xshellAuthentication" src="https://user-images.githubusercontent.com/41296962/60366546-d733b380-99b9-11e9-873f-cdf4078e9c77.png">
+
+2-6. Click <b><i>OK</i></b> to complete the setup. Now the Xshell has stored the session you just created. Double click this session to connect.
+
+<img width="493" alt="ec2_xshellSample" src="https://user-images.githubusercontent.com/41296962/60366753-75c01480-99ba-11e9-8461-3cf4d9980baf.png">
