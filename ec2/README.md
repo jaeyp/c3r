@@ -31,6 +31,72 @@
 ![aws_choose_instance_type](https://user-images.githubusercontent.com/41296962/59552255-8e5c1380-8f52-11e9-9876-ad938def593b.png)
 
 3. Follow the instructions to complete step by step, at last need to choose <b><i>Key Pair</i></b> after launching it. You can select <b><i>Choose an existing key pair</i></b>, als can choose to <b><i>Create a new key pair</i></b>. Then choose <b><i>Download Key Pair</i></b>.
+A key pair consists of a public key that AWS stores and a private key file that you store (downloaded as PEM file). Together, the two keys enable you to securely connect to your EC2 instance using SSH.
 You must download it as this is the only chance to store the private key pair file. Everytime you launch the instance, the private key will be asked.
 
 ![aws_select_key_pair](https://user-images.githubusercontent.com/41296962/59552347-aed89d80-8f53-11e9-8ee0-54374dacf9e9.png)
+
+### Connect to the Server
+
+1. using PuTTY
+
+1-1. Download the PuTTY software from <b><i><a href="https://www.putty.org/">www.putty.org</a></i></b>. Be sure to download the entire package as shown below, as it will include all the needed utilities such as puttygen and pageant.
+<img width="950" alt="ec2_PuttyDownload" src="https://user-images.githubusercontent.com/41296962/60362758-bb2b1480-99af-11e9-9c32-fe8871e14415.png">
+
+1-2. Now we need the key pair that is downloaded when creating the instance. Convert the PEM file to PPK format. 
+
+  (1) Open the PuTTYgen software. You can find it in the PuTTY directory from Start Menu.
+      On the PuTTYgen dialog box, click the Load Button and then select the .PEM file. Note: when browsing for the PEM file be sure to         select <b><i>All Files</i></b> in the dropdown list. PuTTYgen will then load and convert your file.
+<img width="820" alt="ec2_PuttygenLoad" src="https://user-images.githubusercontent.com/41296962/60363700-35f52f00-99b2-11e9-9c6c-4c6208557c93.png">
+
+![ec2_PuttygenConvert](https://user-images.githubusercontent.com/41296962/60363774-72c12600-99b2-11e9-8bde-fa1b90837478.png)
+
+  (2) click on “Save private key”. A warning message asking if you want to save this key without a passphrase. Select Yes. Provide a           name for your ppk file and click save.
+![ec2_PuttygenSave](https://user-images.githubusercontent.com/41296962/60363934-d1869f80-99b2-11e9-9633-babe15697be7.png)
+
+Now the PEM file has been converted to a PPK file, it is ready to use the PuTTY utility. 
+
+1-3. Launch PuTTY. 
+
+  (1) Enter Host Name into the appropriate field. This will be in the format of: user_name@public_dns_name. For an Ubuntu AMI, the user       name is ubuntu or root. Or, use the IPv4 Public IP. 
+
+![ec2_PuttyHostname](https://user-images.githubusercontent.com/41296962/60364559-7f467e00-99b4-11e9-93d6-e2f298ba906d.png)
+
+  (2) Next, click on the <b><i>+</i></b> button next to the SSH field to expand this section. Then click on <b><i>Auth</i></b> and browse to search the private key file (the PPK file)
+
+<img width="808" alt="ec2_PuttyPrivateKey" src="https://user-images.githubusercontent.com/41296962/60364827-29260a80-99b5-11e9-95de-881ce42808a4.png">
+
+  (3) Lastly, click on Open to start your SSH session. If this is the first time to log into the instance, you will receive the               following alert. Click on Yes to continue.
+  
+  ![ec2_PuttyAlert](https://user-images.githubusercontent.com/41296962/60365016-b23d4180-99b5-11e9-9cba-156b6df6311a.png)
+
+  (4) If everything is correct, you will see a new window appear displaying the command line SSH session. The default login name is           ubuntu.
+
+<img width="495" alt="ec2_PuttyLoginAs" src="https://user-images.githubusercontent.com/41296962/60365221-1bbd5000-99b6-11e9-9b6b-a8ff507db3b8.png">
+  
+2. use Xshell
+
+2-1. Download the Xshell from <b><i><a href="https://www.netsarang.com/en/xshell/">www.netsarang.com/en/xshell</a></i></b>.
+
+![xShell](https://user-images.githubusercontent.com/41296962/60365375-8c646c80-99b6-11e9-9119-e10224f54464.PNG)
+
+
+2-2. Choolse the <b><i>Tools</i></b> menu, select <b><i>User Key Manager...</i></b>. 
+
+<img width="490" alt="ec2_xshellTool" src="https://user-images.githubusercontent.com/41296962/60365752-98046300-99b7-11e9-9030-bfc7f10f176d.png">
+
+2-3. In the <b><i>User Keys</i></b> interface, select <b><i>Import...</i></b> button. Import the PEM file you have downloaded and then <b><i>Close</i></b>.
+
+<img width="946" alt="ec2_xshellPEM" src="https://user-images.githubusercontent.com/41296962/60365957-2ed11f80-99b8-11e9-9463-8243084a60f1.png">
+
+2-4. Click <b><i>New...</i></b> in the <b><i>File</i></b> menu to open the <b><i>New Session Properties</i></b> interface. Select <b><i>Connection</i></b> and enter <b><i>Name</i></b> and <b><i>Host</i></b>.
+
+<img width="919" alt="ec2_xshellConnection" src="https://user-images.githubusercontent.com/41296962/60366166-af901b80-99b8-11e9-9060-65c5357d635b.png">
+
+2-5. Select <b><i>Authentication</i></b>. Change <b><i>Method</i></b> to <b><i>Public Key</i></b>; For <b><i>User Name</i></b> field, enter <b><i>ubuntu</i></b> as the default name; For <b><i>User Key</i></b> field, use the drop down to select the PEM file you just have imported. 
+
+<img width="921" alt="ec2_xshellAuthentication" src="https://user-images.githubusercontent.com/41296962/60366546-d733b380-99b9-11e9-873f-cdf4078e9c77.png">
+
+2-6. Click <b><i>OK</i></b> to complete the setup. Now the Xshell has stored the session you just created. Double click this session to connect.
+
+<img width="493" alt="ec2_xshellSample" src="https://user-images.githubusercontent.com/41296962/60366753-75c01480-99ba-11e9-8461-3cf4d9980baf.png">
