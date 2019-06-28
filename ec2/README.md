@@ -39,3 +39,4 @@ You must download it as this is the only chance to store the private key pair fi
 
 1. using PuTTY
 (1) Download the PuTTY software from <b><i><a href="https://www.putty.org/">www.putty.org</a></i></b>. Be sure to download the entire package as shown below, as it will include all the needed utilities such as puttygen and pageant.
+<img width="950" alt="ec2_PuttyDownload" src="https://user-images.githubusercontent.com/41296962/60362758-bb2b1480-99af-11e9-9c32-fe8871e14415.png">
