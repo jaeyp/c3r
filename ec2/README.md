@@ -34,3 +34,8 @@
 You must download it as this is the only chance to store the private key pair file. Everytime you launch the instance, the private key will be asked.
 
 ![aws_select_key_pair](https://user-images.githubusercontent.com/41296962/59552347-aed89d80-8f53-11e9-8ee0-54374dacf9e9.png)
+
+### Connect with the Server
+
+1. using PuTTY
+(1) Download the PuTTY software from <b><i><a href="www.putty.org">www.putty.org</a></i></b>. Be sure to download the entire package as shown below, as it will include all the needed utilities such as puttygen and pageant.
