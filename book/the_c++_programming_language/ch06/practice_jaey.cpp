@@ -224,7 +224,7 @@ void Chapter6::TestConst()
 	//k3 = &var3;             // error. it's const pointer.
 	//int * const k3 = &var1; // error. var1 is constant integer and can't convert constant integer to integer.
 	
-	// 4. k4 is a constant pointer of a constant integer.
+	// 4. k4 is a constant pointer to a constant integer.
 	int const * const k4 = &var1;
 
 	// const return value
