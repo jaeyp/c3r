@@ -269,6 +269,7 @@ void Chapter6::TestLRvalue()
 	/*  Lvalue is an expression that refers to an object. (somthing has identity, cannot be moved)
 	 *  Rvalue no longer exists after an expression. (movable, temporary)
 	 */
+	std::cout << "\n* lvalue and rvalue *\n";
 
 	int x = 3;          // 3 is rvalue
 	const int y = x;
@@ -286,8 +287,7 @@ void Chapter6::TestLRvalue()
 	*(p+1) = 10;    // okay, *(p+1) is lvalue.
 	&(*(p+1));      // okay, *(p+1) is lvalue.
 
-	std::cout << "\n* lvalue and rvalue *\n"
-		<< std::string("this is rvalue") << std::endl;	// return value of string() is rvalue
+	std::cout << std::string("this is rvalue") << std::endl;	// return value of string() is rvalue
 
 	int i, j;
 	x = 1;
@@ -299,6 +299,10 @@ void Chapter6::TestLRvalue()
 	j = x++;    // j = 1, and x comes to 2 after the expression.
 	//x++ = j;  // error, x++ is rvalue
 	//&(x++);   // error, x++ is rvalue
+
+	int&& ri=9; // rvalue reference declaration
+	&(ri);      // okay, ri is lvalue
+	std::cout << ri << '\n';
 }
 
 int main(int argc, char *argv[])
