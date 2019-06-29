@@ -62,9 +62,13 @@ void swap_lvalue(T& a, T& b)
 template<class T>
 void replace_lvalue_with_rvalue(T& a, T&& b)
 {
+#if 1
+	swap_lvalue(a, b);
+#else
 	T tmp {std::move(a)};
 	a = std::move(b);
 	b = std::move(tmp);
+#endif
 }
 
 void set_default(std::vector<int>& v)
