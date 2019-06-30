@@ -263,6 +263,8 @@ void Chapter6::TestTypeDeduction(void)
 	// TODO:
 }
 
+constexpr int f(){return 0;}
+
 /* Lvalue and Rvalue */
 void Chapter6::TestLRvalue()
 {
@@ -287,8 +289,6 @@ void Chapter6::TestLRvalue()
 	*(p+1) = 10;    // okay, *(p+1) is lvalue.
 	&(*(p+1));      // okay, *(p+1) is lvalue.
 
-	std::cout << std::string("this is rvalue") << std::endl;	// return value of string() is rvalue
-
 	int i, j;
 	x = 1;
 	i = ++x;    // i = 2, x = 2
@@ -300,9 +300,15 @@ void Chapter6::TestLRvalue()
 	//x++ = j;  // error, x++ is rvalue
 	//&(x++);   // error, x++ is rvalue
 
-	int&& ri=9; // rvalue reference declaration
-	&(ri);      // okay, ri is lvalue
-	std::cout << ri << '\n';
+	int&& rr=9; // rvalue reference declaration
+	&(rr);      // okay, rvalue reference 'rr' is lvalue
+	std::cout << rr << '\n';
+
+	std::cout << std::string("this is rvalue") << std::endl;	// return value of string() is rvalue
+
+	i = f();	// f() is rvalue
+	//&('a');	// error, 'a' is rvalue
+	&("abcd");	// okay, "abcd is lvalue
 }
 
 int main(int argc, char *argv[])

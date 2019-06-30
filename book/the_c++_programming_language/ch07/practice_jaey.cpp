@@ -76,6 +76,21 @@ void set_default(std::vector<int>& v)
 	replace_lvalue_with_rvalue(v, std::vector<int>{0,1,2,3,4,5,6,7,8,9});
 }
 
+void func(int* i)
+{
+	int aa[10] = {0,};
+	void *pv = i;
+	int * pi2 = static_cast<int*>(pv);
+	//char * pi3 = static_cast<int*>(pv);
+
+	&("abcd");
+	const char* pr = "abcd";
+	int&& rr = 3;
+	char&& crr = 'a';
+	&("abcd");
+	int x = aa[99];
+}
+
 int main()
 {
 	int v[3][5] = {{0,1,2,3,4},{10,11,12,13,14},{20,21,22,23,24}};
@@ -99,4 +114,15 @@ int main()
 	set_default(vec);
 	for(int i : vec) std::cout << i << ' ';
 	std::cout << '\n';
+
+#if 1
+	int i = 3;
+	func(&i);
+#else
+	int i = 3;
+	int* pi = &i;
+	void* pv = pi;
+	int * pi2 = static_cast<int*>(pv);
+	char * pi3 = static_cast<int*>(pv);
+#endif
 }
