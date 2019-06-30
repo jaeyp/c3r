@@ -23,7 +23,7 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ### Miscellaneous
 > * [FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) (Filesystem Hierarchy Standard)  
-> * [sudoers](#)
+> * [sudoers](https://github.com/jaeyp/c3r/blob/master/misc/sudoers.md)
 > * [snappy vs apt packages on Ubuntu](#)
 
 ---
@@ -37,18 +37,17 @@ Conestoga Coding Club Repository since June 8, 2019
 
 ## Coding Challenge
 (_under planning_)  
-#### [CodeForces](#)
+#### [CodeForces](http://codeforces.com/)
 
 ---
 
 ## Code Hack
 (_under planning_)  
-#### [flask](#)
 
 ---
 
 ## Project
-#### [Hope we can start own projects some day...](#)
+(_under planning_)  
 
 ---
 
