@@ -1,8 +1,7 @@
-[schedule]
-- presentation ch6, ch7 (jaey)
-	Topic: alignment, lvalue & rvalue
-- presentation ch7 (Yilong)
-	Topic: ch7.1 to ch7.6
-- presentation ch7 (Jayden)
-	Topic: ch7.7
-- club suggestions and discussion
+time:10:30am ~ 02:30pm
+1. presentation ch6, ch7 (jaey)
+	Topic: alignment, pointer, const, lvalue & rvalue
+2. presentation ch7 (Jayden)
+	Topic: array, pointer, reference
+3. presentation assignment (Yilong)
+	Topic: .bashrc, Amazon EC2 setup
