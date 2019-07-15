@@ -99,12 +99,16 @@ int main()
 
 	Color c0 {}; // c0 gets the default value 0
 	//Color c1 = 1; // error, 1 is not of type Color. it's integral value
-	Color c2 = Color(1);
+	Color c2 = Color(1); // okay
+	Color c3 = Color(999); // okay
 	//Color c3 = Color{1}; // error, no narrowing conversion to an enum class
 	Color c4 = static_cast<Color>(1); // brute force
 	Color c5 = static_cast<Color>(999); // brute force (0011 1110 0111)
+	//Color c6 {1}; // error
+	//Color c7(1);  // error
 	palette(c0); // 0
 	palette(c2); // red
+	palette(c3); // -25
 	palette(c4); // red
 	palette(c5); // -25: 1110 0111
 
