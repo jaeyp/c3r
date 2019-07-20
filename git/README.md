@@ -131,6 +131,30 @@ _This image was created by **Jaehyun**_
 ~$ git push origin --delete feature
 ```
 
+### Useful commands
+* Reload ~/.gitconfig  
+```bash
+~$ git init
+```
+
+* Find ROOT commit  
+```bash
+~$ git rev-list --max-parents=0 HEAD
+```
+
+* Clone the repository and checkout the specific commit  
+```bash
+~$ git clone -n <repository-name> # no checkout of HEAD
+~$ git log # select <commit-sha> to be HEAD
+~$ git checkout <commit-sha> # set the HEAD of master to point to <commit-sha>
+```
+
+* Clone the repository and checkout the specific commit into a branch  
+```bash
+~$ git clone -n <repository-name> # no checkout of HEAD
+~$ git checkout -b <new-branch> <commit-sha> # set the HEAD of master to point to <commit-sha> into <new-branch>
+```
+
 ---
 
 ## References
