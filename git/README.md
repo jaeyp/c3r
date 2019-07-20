@@ -131,7 +131,9 @@ _This image was created by **Jaehyun**_
 ~$ git push origin --delete feature
 ```
 
-### Useful commands
+---
+
+## Useful Commands
 * Reload ~/.gitconfig  
 ```bash
 ~$ git init
@@ -145,7 +147,6 @@ _This image was created by **Jaehyun**_
 * Clone the repository and checkout the specific commit  
 ```bash
 ~$ git clone -n <repository-name> # no checkout of HEAD
-~$ git log # select <commit-sha> to be HEAD
 ~$ git checkout <commit-sha> # set the HEAD of master to point to <commit-sha>
 ```
 
