@@ -139,6 +139,16 @@ _This image was created by **Jaehyun**_
 ~$ git init
 ```
 
+* Get first 10 commits' log   
+```bash
+~$ git log -n 10
+```
+
+* Get next 10 commits' log skip first 20  
+```bash
+~$ git log --skip=20 -n 10
+```
+
 * Find ROOT commit  
 ```bash
 ~$ git rev-list --max-parents=0 HEAD
