@@ -83,12 +83,12 @@ void List::Insert(int index, int value)
 	{
 		Node* temp = new Node{ nullptr, value };
 
-		if(index == 0)    // if removing head
+		if(index == 0)            // if inserting to the front
 		{
 			temp->Next = mHead;
 			mHead = temp;
 		}
-		else if(index == mSize)
+		else if(index == mSize)   // if inserting to the end
 		{
 			mTail->Next = temp;
 			mTail = temp;
@@ -118,7 +118,7 @@ void List::Remove(int index)
 	{
 		Node* current = mHead;
 
-		if(index == 0)    // if removing head
+		if(index == 0)               // if removing head
 		{
 			mHead = current->Next;
 		}
@@ -134,7 +134,7 @@ void List::Remove(int index)
 	
 			previous->Next = current->Next;
 		
-			if(index == mSize - 1)    // if removing tail
+			if(index == mSize - 1)  // if removing tail
 			{
 				mTail = previous;
 			}
