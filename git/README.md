@@ -206,6 +206,7 @@ _This image was created by **Jaehyun**_
 ```
 
 * Rollback commit  
+
 If codes were already pushed to a remote server
 ```bash
 # revert
