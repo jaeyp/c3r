@@ -30,6 +30,44 @@
 
 _This image was created by **Jaehyun**_  
 
+```bash
+# commit object
+~$ git cat-file 4c1492d -p
+tree ec7ca6359f5e3a85bfe3177e418c3c1a177ba971
+parent 68b280bf6bf97934c297d4c1f1be2f8ab76448cc
+author jaeyp <jp.inseoul@gmail.com> 1563603494 +0000
+committer jaeyp <jp.inseoul@gmail.com> 1563603494 +0000
+
+
+# tree object
+~$ git cat-file ec7ca6 -p
+100644 blob f47cb2045f130d56b12a40b1ab207bd492281c17	.gitignore
+100644 blob 0b8b24197f3d09520cd41ad4b29ae405f93f869c	LICENSE
+100644 blob b6d590ebba2788fdc4cefa170c0823323a52685b	README.md
+040000 tree 8a7f5376e19aa4c92850d0317ceeae72bfd6ad9c	book
+040000 tree 8d8341d53fab3df308344f3cec49980a1fff1076	cmake
+040000 tree 5443b255396138d40b4553659e5294ef0f19d6ce	doc
+040000 tree 6ee45962dd61c82b1f649791296c9ecdd8760836	ec2
+040000 tree 6e9b2dfd9d896212590d99105a700a5b3ad712b1	git
+040000 tree 6614da418cbe7c160b40fff971c6cad97e215836	meeting_minutes
+040000 tree 955740235ce358c0bc87c87f55095e7ede070018	misc
+040000 tree 50ffde6b6658f53450b728e9fcbbcacaa87a961a	shell
+040000 tree 3e2ed9d3401f4d993bd4673b5d5a4c662513bc82	vi
+
+
+# blob object
+~$ git cat-file 0b8b24 -p
+BSD 2-Clause License
+
+Copyright (c) 2019, Jaehyun Park
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+...
+
+```
+
 ### HEADs
 * **HEAD** names the commit on which you based the changes in the working tree.  
 * **FETCH_HEAD** records the branch which you fetched from a remote repository with your last git fetch invocation.  
@@ -164,6 +202,57 @@ _This image was created by **Jaehyun**_
 ```bash
 ~$ git clone -n <repository-name> # no checkout of HEAD
 ~$ git checkout -b <new-branch> <commit-sha> # set the HEAD of master to point to <commit-sha> into <new-branch>
+
+```
+
+* Rollback commit  
+** if codes were already pushed to a remote server
+```bash
+# revert
+#         ┏-------┓           
+#         |       V
+# o---o---X---o---O
+
+~$ git revert <commit-sha>
+~$ git push origin master
+
+# reset (not recommended)
+#             ┏---┓           
+#             V   |
+# o---o---o---O---X
+~$ git reset --hard <commit-sha>
+~$ git push -f origin master
+
+```
+
+** else (when codes were NOT pushed to a remote server)
+```bash
+# The '--soft' parameter (Reset only HEAD, but keep Staged and Committed changes)
+# resets HEAD to another commit.
+#     HEAD            INDEX        working copy
+# ------------- != ------------- = -------------
+#   <1234567>        <abcdefg>       <abcdefg>
+~$ git reset --soft <commit-sha>
+~$ git commit -a # add and commit
+
+# The '--mixed'(default) parameter (Reset HEAD, also reset changes to Unstaged status, but keep Committed changes)
+# resets HEAD to another commit
+# , and will reset the index to match it.
+#     HEAD           INDEX         working copy
+# ------------- = ------------- != -------------
+#   <1234567>       <1234567>        <abcdefg>
+~$ git reset (--mixed) <commit-sha>
+~$ git commit
+
+# The '--hard' parameter (Reset HEAD, also reset changes to Unstaged and Uncommitted status)
+# resets HEAD to another commit
+# , resets the index to match it
+# , and resets the working copy to match it as well.
+#     HEAD           INDEX        working copy
+# ------------- = ------------- = -------------
+#   <1234567>       <1234567>       <1234567>
+~$ git reset --hard <commit-sha>
+
 ```
 
 ---
