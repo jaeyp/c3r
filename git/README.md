@@ -206,7 +206,7 @@ _This image was created by **Jaehyun**_
 ```
 
 * Rollback commit  
-** if codes were already pushed to a remote server
+If codes were already pushed to a remote server
 ```bash
 # revert
 #         ┏-------┓           
@@ -225,7 +225,7 @@ _This image was created by **Jaehyun**_
 
 ```
 
-** else (when codes were NOT pushed to a remote server)
+Else (when codes were NOT pushed to a remote server)
 ```bash
 # The '--soft' parameter (Reset only HEAD, but keep Staged and Committed changes)
 # resets HEAD to another commit.
