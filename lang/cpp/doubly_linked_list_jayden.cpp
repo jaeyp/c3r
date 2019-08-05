@@ -167,27 +167,27 @@ int main()
 
 	list.Display();
 	list.Remove(0);
-    list.Insert(0, 7);
+	list.Insert(0, 7);
     
-    std::cout << "\nCall Remove(0) && Insert(0, 7)\n";
-    list.Display();
+	std::cout << "\nCall Remove(0) && Insert(0, 7)\n";
+	list.Display();
  
 	list.Remove(2);
-    list.Insert(2, 9);
+	list.Insert(2, 9);
  
-    std::cout << "\nCall Remove(2) && Insert(2, 9)\n";
-    list.Display();
+	std::cout << "\nCall Remove(2) && Insert(2, 9)\n";
+	list.Display();
  
-    list.Remove(4);
-    list.Insert(4, 10);
- 
+	list.Remove(4);
+	list.Insert(4, 10);
+
 	std::cout << "\nCall Remove(4) && Insert(4, 10)\n";
-    list.Display();
+	list.Display();
  
-    list.Remove(3);
-    list.Remove(0);
-    list.Add(7);
+	list.Remove(3);
+	list.Remove(0);
+	list.Add(7);
  
-    std::cout << "\nCall Remove(3) && Remove(0) && Add(7)\n";
-    list.Display();
+	std::cout << "\nCall Remove(3) && Remove(0) && Add(7)\n";
+	list.Display();
 }
