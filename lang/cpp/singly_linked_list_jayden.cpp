@@ -1,158 +1,153 @@
 #include <iostream>
+#include <string>
 
+template<class T>
 struct Node
 {
-	Node* Next;
-	int Data;
+	T Data;
+	Node<T>* Next;
 };
 
+template<class T>
 class List
 {
 public:
 	List();
 	~List();
 
-	int GetHead() const;
-	int GetTail() const;
 	int GetSize() const;  // not modify return value
 
-	void Add(int value);
-	void Insert(int index, int value);
-	void Remove(int index);
+	Node<T>* CreateNode(T data);
+	Node<T>* FindNodeAt(int pos);
+	void AddNode(Node<T>* node);
+	void RemoveNode(Node<T>* previous, Node<T>* current);
 	void Display();
 
 private:
-	Node* mHead;
-	Node* mTail;
+	void freeNode(Node<T>* node);
+
+private:
+	Node<T>* mHead;
+	Node<T>* mTail;
 	int mSize;           // size of List
 };
 
-List::List() : mHead{nullptr}, mTail{nullptr}, mSize{0} 
+template<class T>
+List<T>::List() : mHead{nullptr}, mTail{nullptr}, mSize{0} 
 {
 }
 
-List::~List()
+template<class T>
+List<T>::~List()
 {
-	Node* current = nullptr;
-	Node* next = mHead;
+	Node<T>* current = nullptr;
+	Node<T>* next = mHead;
 
 	while(next)   // while(next != nullptr)
 	{
 		current = next;
 		next = next->Next;
 
-		delete current;
+		freeNode(current);
 	}
 }
 
-int List::GetHead() const
-{
-	return mHead->Data;
-}
-
-int List::GetTail() const
-{
-	return mTail->Data;
-}
-
-int List::GetSize() const
+template<class T>
+int List<T>::GetSize() const
 {
 	return mSize;
 }
 
-void List::Add(int value)
+template<class T>
+Node<T>* List<T>::CreateNode(T data)
 {
-	Node* temp = new Node{ nullptr, value };
+	return new Node<T>{ data, nullptr };
+}
 
-	if(mHead)    // if(mHead != nullptr)
+template<class T>
+Node<T>* List<T>::FindNodeAt(int pos)
+{
+	Node<T>* node = mHead;
+
+	for(int i = 1; i < pos; i++)
 	{
-		mTail->Next = temp;
+		node = node->Next;
+	}
+
+	return node;
+}
+
+template<class T>
+void List<T>::AddNode(Node<T>* node)
+{
+	if(mHead)
+	{
+		mTail->Next = node;
 	}
 	else
 	{
-		mHead = temp;
+		mHead = node;
 	}
 
-	mTail = temp;
+	mTail = node;
 	mSize++;
 }
 
-void List::Insert(int index, int value)
+template<class T>
+void List<T>::RemoveNode(Node<T>* previous, Node<T>* current)
 {
-	if(index >= 0 && index <= mSize)
+/*
+	switch(current)
 	{
-		Node* temp = new Node{ nullptr, value };
+		case this->mHead:             // error: case only accepts constants known at compile time
+			mHead = mHead->Next;
+			break;
 
-		if(index == 0)            // if inserting to the front
-		{
-			temp->Next = mHead;
-			mHead = temp;
-		}
-		else if(index == mSize)   // if inserting to the end
-		{
-			mTail->Next = temp;
-			mTail = temp;
-		}
-		else
-		{
-			Node* previous = nullptr;
-			Node* current = mHead;
-		
-			for(int i = 0; i < index; i++)
-			{
-				previous = current;
-				current = current->Next;
-			}
+		case this->mTail:
+			mTail = previous;
+			mTail->Next = nullptr;
+			break;
 
-			previous->Next = temp;
-			temp->Next = current;
-		}
-
-		mSize++;
-	}
-}
-
-void List::Remove(int index)
-{
-	if(index >= 0 && index < mSize)
-	{
-		Node* current = mHead;
-
-		if(index == 0)               // if removing head
-		{
-			mHead = current->Next;
-		}
-		else
-		{	
-			Node* previous = nullptr;
-			
-			for(int i = 0; i < index; i++)
-			{
-				previous = current;
-				current = current->Next;
-			}
-	
+		default:
 			previous->Next = current->Next;
-		
-			if(index == mSize - 1)  // if removing tail
-			{
-				mTail = previous;
-			}
-		}
-
-		delete current;
-		mSize--;
+			break;
 	}
+*/
+	/*
+	std::cout << "previous: " << previous;
+	std::cout << "\ncurrent: " << current;
+	std::cout << "\nmHead: " << mHead;
+	std::cout << "\nmTail: " << mTail;
+	std::cout << '\n';
+	*/
+
+	if(current == mHead)
+	{
+		mHead = mHead->Next;
+	}
+	else if(current == mTail)
+	{
+		mTail = previous;
+		mTail->Next = nullptr;
+	}
+	else
+	{
+		previous->Next = current->Next;
+	}
+
+	freeNode(current);
+	mSize--;
 }
 
-void List::Display()
+template<class T>
+void List<T>::Display()
 {
-	Node* temp = mHead;
+	Node<T>* node = mHead;
 	
-	while(temp)
+	while(node)
 	{
-		std::cout << temp->Data << ' ';
-		temp = temp->Next;
+		std::cout << node->Data << ' ';
+		node = node->Next;
 	}
 
 	std::cout << "\nHead: " << mHead->Data << " Head->Next: " << mHead->Next->Data;
@@ -161,39 +156,64 @@ void List::Display()
 	std::cout << '\n';
 }
 
+template<class T>
+void List<T>::freeNode(Node<T>* node)
+{
+	delete node;
+}
+
 int main()
 {
-	List list{};
+	List<int> list{};
+	List<std::string> list2{};
 	
+	Node<int>* node = nullptr;
+	Node<std::string>* node2 = nullptr;
+
 	for(int i = 0; i < 5; i++)
 	{
-		list.Add(i);
+		node = list.CreateNode(i);
+		list.AddNode(node);
+
+		node2 = list2.CreateNode("Str" + std::to_string(i));
+		list2.AddNode(node2);
 	}
 
+	std::cout << "\n------------------List<int>------------------\n";
 	list.Display();
 
-	list.Remove(0);
-	list.Insert(0, 7);
-
-	std::cout << "\nCall Remove(0) && Insert(0, 7)\n";
+	std::cout << "\nCall CreateNode(3) && AddNode(node)\n";
+	node = list.CreateNode(3);
+	list.AddNode(node);
 	list.Display();
 
-	list.Remove(2);
-	list.Insert(2, 9);
-
-	std::cout << "\nCall Remove(2) && Insert(2, 9)\n";
+	std::cout << "\nCall FindNodeAt(1) && FindNodeAt(2) && RemoveNode(previous, current)\n";
+	Node<int>* previous = list.FindNodeAt(1);
+	Node<int>* current = list.FindNodeAt(2);
+	list.RemoveNode(previous, current);
 	list.Display();
 
-	list.Remove(4);
-	list.Insert(4, 10);
-
-	std::cout << "\nCall Remove(4) && Insert(4, 10)\n";
+	std::cout << "\nCall FindNodeAt(1) && FindNodeAt(1) && RemoveNode(previous, current)\n";
+	previous = list.FindNodeAt(1);
+	current = list.FindNodeAt(1);
+	list.RemoveNode(previous, current);
 	list.Display();
 
-	list.Remove(3);
-	list.Remove(0);
-	list.Add(7);
+	std::cout << "\n------------------list<string>---------------\n";
+	std::cout << "\nCall CreateNode(\"apple\") && AddNode(node)\n";
+	node2 = list2.CreateNode("apple");
+	list2.AddNode(node2);
+	list2.Display();
 
-	std::cout << "\nCall Remove(3) && Remove(0) && Add(7)\n";
-	list.Display();
+	std::cout << "\nCall FindNodeAt(1) && FindNodeAt(2) && RemoveNode(previous, current)\n";
+	Node<std::string>* previous2 = list2.FindNodeAt(1);
+	Node<std::string>* current2 = list2.FindNodeAt(2);
+	list2.RemoveNode(previous2, current2);
+	list2.Display();
+
+	std::cout << "\nCall FindNodeAt(1) && FindNodeAt(1) && RemoveNode(previous, current)\n";
+	previous2 = list2.FindNodeAt(1);
+	current2 = list2.FindNodeAt(1);
+	list2.RemoveNode(previous2, current2);
+	list2.Display();
 }

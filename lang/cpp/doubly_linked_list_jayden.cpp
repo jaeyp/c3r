@@ -1,12 +1,15 @@
 #include <iostream>
+#include <string>
 
+template<typename T>
 struct Node
 {
-	Node* Previous;
-	Node* Next;
-	int Data;
+	T Data;
+	Node<T>* Previous;
+	Node<T>* Next;
 };
 
+template<typename T>
 class List
 {
 public:
@@ -15,139 +18,138 @@ public:
 
 	int GetSize() const;
 
-	void Add(int value);
-	void Insert(int index, int value);
-	void Remove(int index);
+	Node<T>* CreateNode(T data);
+	Node<T>* FindNodeAt(int pos);
+	void AddNode(Node<T>* node);
+	void InsertNode(Node<T>* current, Node<T>* created);
+	void RemoveNode(Node<T>* node);
 	void Display();
 
 private:
-	Node* mHead;
-	Node* mTail;
+	void freeNode(Node<T>* node);
+private:
+	Node<T>* mHead;
+	Node<T>* mTail;
 	int mSize;
 };
 
-List::List() : mHead{nullptr}, mTail{nullptr}, mSize{0}
+template<class T>
+List<T>::List() : mHead{nullptr}, mTail{nullptr}, mSize{0}
 {
 }
 
-List::~List()
+template<class T>
+List<T>::~List()
 {
-	Node* temp = nullptr;
+	Node<T>* node = nullptr;
 
 	while(mHead)   // while(mHead != nullptr)
 	{
-		temp = mHead;
+		node = mHead;
 		mHead = mHead->Next;
-		delete temp;
+
+		freeNode(node);
 	}
 }
 
-int List::GetSize() const
+template<class T>
+int List<T>::GetSize() const
 {
 	return mSize;
 }
 
-void List::Add(int value)
+template<class T>
+Node<T>* List<T>::CreateNode(T data)
 {
-	Node* temp = new Node{ nullptr, nullptr, value };   // initialize
-	
+	return new Node<T>{ data, nullptr, nullptr };
+}
+
+template<class T>
+Node<T>* List<T>::FindNodeAt(int pos)
+{
+	Node<T>* node = mHead;
+
+	for(int i = 1; i < pos; i++)
+	{
+		node = node->Next;
+	}
+
+	return node;
+}
+
+template<class T>
+void List<T>::AddNode(Node<T>* node)
+{
 	if(mHead)   // if(mHead != nullptr)
 	{
-		temp->Previous = mTail;
-		mTail->Next = temp;
+		mTail->Next = node;
+		node->Previous = mTail;
 	}
 	else
 	{
-		mHead = temp;
+		mHead = node;
 	}
 
-	mTail = temp;
+	mTail = node;
 	mSize++;
 }
 
-void List::Insert(int index, int value)
+template<class T>
+void List<T>::InsertNode(Node<T>* current, Node<T>* created)
 {
-	Node* temp = new Node{ nullptr, nullptr, value};
-
-	if(index >= 0 && index <= mSize)   // 0 <= index <= mSize
+	if(current == mHead)
 	{
-		if(index == 0)                 // if inserting to the front
-		{
-			temp->Next = mHead;
-			mHead->Previous = temp;
-			mHead = temp;
-		}
-		else if(index == mSize)        // if inserting to the end
-		{
-			temp->Previous = mTail;
-			mTail->Next = temp;
-			mTail = temp;
-		}
-		else
-		{
-			Node* previousNode = nullptr;
-			Node* currentNode = mHead;
-
-			for(int i = 0; i < index; i++)
-			{
-				previousNode = currentNode;
-				currentNode = currentNode->Next;
-			}
-
-			previousNode->Next = temp;
-			temp->Previous = previousNode;
-			temp->Next = currentNode;
-			currentNode->Previous = temp;
-		}
-
-		mSize++;
+		created->Next = current;
+		current->Previous = created;
+		mHead = created;
 	}
+	else if(current == mTail)
+	{
+		AddNode(created);
+	}
+	else
+	{
+		current->Previous->Next = created;
+		created->Previous = current->Previous;
+		created->Next = current;
+		current->Previous = created;
+	}
+
+	mSize++;
 }
 
-void List::Remove(int index)
+template<class T>
+void List<T>::RemoveNode(Node<T>* node)
 {
-	if(index >= 0 && index < mSize)   // 0 <= index < mSize
+	if(node == mHead)
 	{
-		Node* temp = nullptr;
-
-		if(index == 0)                // if removing head
-		{
-			temp = mHead;
-			mHead = mHead->Next;
-			mHead->Previous = nullptr;
-		}
-		else if(index == mSize - 1)   // if removing tail
-		{
-			temp = mTail;
-			mTail = mTail->Previous;
-			mTail->Next = nullptr;
-		}
-		else
-		{
-			temp = mHead;
-
-			for(int i = 0; i < index; i++)
-			{
-				temp = temp->Next;
-			}
-
-			temp->Previous->Next = temp->Next;
-			temp->Next->Previous = temp->Previous;
-		}
-
-		delete temp;
-		mSize--;
+		mHead = mHead->Next;
+		mHead->Previous = nullptr;
 	}
+	else if(node == mTail)
+	{
+		mTail = mTail->Previous;
+		mTail->Next = nullptr;
+	}
+	else
+	{
+		node->Previous->Next = node->Next;
+		node->Next->Previous = node->Previous;
+	}
+
+	freeNode(node);
+	mSize--;
 }
 
-void List::Display()
+template<class T>
+void List<T>::Display()
 {
-	Node* temp = mHead;
+	Node<T>* node = mHead;
 
-	while(temp)
+	while(node)
 	{
-		std::cout << temp->Data << ' ';
-		temp = temp->Next;
+		std::cout << node->Data << ' ';
+		node = node->Next;
 	}
 
 	std::cout << "\nHead: " << mHead->Data << " Head->Previous: " << mHead->Previous << " Head->Next: " << mHead->Next->Data;
@@ -156,38 +158,75 @@ void List::Display()
 	std::cout << '\n';
 }
 
+template<class T>
+void List<T>::freeNode(Node<T>* node)
+{
+	delete node;
+}
+
 int main()
 {
-	List list{};
+	List<int> list{};
+	List<std::string> list2{};
+	
+	Node<int>* node = nullptr;
+	Node<std::string>* node2 = nullptr;
 
 	for(int i = 0; i < 5; i++)
 	{
-		list.Add(i);
+		node = list.CreateNode(i);
+		list.AddNode(node);
+
+		node2 = list2.CreateNode("Str" + std::to_string(i));
+		list2.AddNode(node2);
 	}
 
+	std::cout << "\n-----------------List<int>---------------\n";
 	list.Display();
-	list.Remove(0);
-	list.Insert(0, 7);
     
-	std::cout << "\nCall Remove(0) && Insert(0, 7)\n";
+	std::cout << "\nCall FindNodeAt(1) && RemoveNode(node)\n";
+	node = list.FindNodeAt(1);
+	list.RemoveNode(node);	
 	list.Display();
- 
-	list.Remove(2);
-	list.Insert(2, 9);
- 
-	std::cout << "\nCall Remove(2) && Insert(2, 9)\n";
-	list.Display();
- 
-	list.Remove(4);
-	list.Insert(4, 10);
 
-	std::cout << "\nCall Remove(4) && Insert(4, 10)\n";
+	std::cout << "\nCall FindNodeAt(3) && CreateNode(9) && InsertNode(current, node)\n";
+	node = list.CreateNode(9);
+	Node<int>* current = list.FindNodeAt(3);
+	list.InsertNode(current, node);
 	list.Display();
  
-	list.Remove(3);
-	list.Remove(0);
-	list.Add(7);
- 
-	std::cout << "\nCall Remove(3) && Remove(0) && Add(7)\n";
+	std::cout << "\nCall FindNodeAt(4) && RemoveNode(node)\n";
+	node = list.FindNodeAt(4);
+	list.RemoveNode(node);	
 	list.Display();
+ 
+	std::cout << "\nCall CreateNode(7) && AddNode(node)\n";
+	node = list.CreateNode(7);
+	list.AddNode(node);
+	list.Display();
+
+	std::cout << "\n-----------------List<string>-------------\n";
+	list2.Display();
+
+	std::cout << "\nCall FindNodeAt(1) && RemoveNode(node)\n";
+	node2 = list2.FindNodeAt(1);
+	list2.RemoveNode(node2);	
+	list2.Display();
+
+	std::cout << "\nCall FindNodeAt(3) && CreateNode(\"apple\") && InsertNode(current, node)\n";
+	node2 = list2.CreateNode("apple");
+	Node<std::string>* current2 = list2.FindNodeAt(3);
+	list2.InsertNode(current2, node2);
+	list2.Display();
+ 
+	std::cout << "\nCall FindNodeAt(4) && RemoveNode(node)\n";
+	node2 = list2.FindNodeAt(4);
+	list2.RemoveNode(node2);	
+	list2.Display();
+ 
+	std::cout << "\nCall CreateNode(\"banana\") && AddNode(node)\n";
+	node2 = list2.CreateNode("banana");
+	list2.AddNode(node2);
+	list2.Display();
+	
 }
