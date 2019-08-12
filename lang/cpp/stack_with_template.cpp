@@ -3,124 +3,91 @@
 
 
 template <class T> class TStack{
-
 public:
+	//####################################
+	//          Constructor.
+	//####################################
+	TStack();
 
-//####################################
-//          Constructor.
-//####################################
+	//####################################
+	//          Destructor.
+	//####################################
+	~TStack();
 
-TStack();
-
-//####################################
-//          Destructor.
-//####################################
-
-~TStack();
-
-//####################################
-//          Class methods.
-//####################################
-
-/**
- *  Adds an item to the stack.
- *  <b>Notes:</b><br>
- *  &nbsp; N/A <br>
- *  ------<br>
- *  <b>Arguments:</b><br>
- *  &nbsp; template<class T>: the type of the class.<br>
- *  ------<br>
- *  <b>Return:</b><br>
- *  &nbsp; N/A<br>
- *  ------<br>
- *  <b>Throws</b><br>
- *  &nbsp; N/A<br>
- */
-void push(T elem);
+	//####################################
+	//          Class methods.
+	//####################################
+	/**
+	 *  Adds an item to the stack.
+	 *  Arguments:
+	 *      template<class T>: the type of the class.
+	 *  Return:
+	 *      N/A
+	 *  Throws
+	 *      N/A
+	 */
+	void push(T elem);
 
 
-/**
- *  Removes the data item at the beginning of the stack.
- *  <b>Notes:</b><br>
- *  &nbsp; Caller is responsible for releasing objects that are popped from the stack.<br>
- *  ------<br>
- *  <b>Arguments:</b><br>
- *  &nbsp; N/A <br>
- *  ------<br>
- *  <b>Return:</b><br>
- *  &nbsp;dataType T: the type<br>
- *  ------<br>
- *  <b>Throws</b><br>
- *  &nbsp; out_of_range exception for an empty stack.<br>
- */
-T pop();
+	/**
+	 *  Removes the data item at the beginning of the stack.
+	 *  Notes:
+	 *      Caller is responsible for releasing objects that are popped from the stack.
+	 *  Arguments:
+	 *      N/A
+	 *  Return:
+	 *      dataType T: the type
+	 *  Throws
+	 *      out_of_range exception for an empty stack.
+	 */
+	T pop();
 
-/**
- *  The size of the stack.
- *  <b>Notes:</b><br>
- *  &nbsp;N/A<br>
- *  ------<br>
- *  <b>Arguments:</b><br>
- *  &nbsp; N/A <br>
- *  ------<br>
- *  <b>Return:</b><br>
- *  &nbsp;int : The size of the stack.<br>
- *  ------<br>
- *  <b>Throws</b><br>
- *  &nbsp; N/A<br>
- */
-int getSize();
+	/**
+	 *  The size of the stack.
+	 *  Arguments:
+	 *      N/A
+	 *  Return:
+	 *      int : The size of the stack.
+	 *  Throws
+	 *      N/A
+	 */
+	int getSize();
 
-/**
- *  Reports if the stack is empty.
- *  <b>Notes:</b><br>
- *  &nbsp;N/A<br>
- *  ------<br>
- *  <b>Arguments:</b><br>
- *  &nbsp; N/A <br>
- *  ------<br>
- *  <b>Return:</b><br>
- *  &nbsp;int : Whether the stack is empty of not.<br>
- *  ------<br>
- *  <b>Throws</b><br>
- *  &nbsp; N/A<br>
- */
-bool isEmpty();
+	/**
+	 *  Reports if the stack is empty.
+	 *  Arguments:
+	 *      N/A
+	 *  Return:
+	 *      int : Whether the stack is empty of not.
+	 *  Throws
+	 *      N/A
+	 */
+	bool isEmpty();
 
-//####################################
-//      End - Class methods.
-//####################################
+	//####################################
+	//      End - Class methods.
+	//####################################
 
 private:
+	/**
+	 *  A linked list node struct.
+	 **/
+	struct Node{
 
+		T data_;
+		Node* next_;
 
-/**
- *  A linked list node struct.
- *  <b>Notes:</b><br>
- *  &nbsp;N/A<br>
- **/
-struct Node{
+	};
 
-    T data_;
-    Node* next_;
+	/**
+	 *  The size of the stack.
+	 **/
+	int size_;
 
-};
-
-
-/**
- *  The size of the stack.
- *  <b>Notes:</b><br>
- *  &nbsp;N/A<br>
- **/
-int size_;
-
-/**
- *  The head of the linked list(stack).
- *  <b>Notes:</b><br>
- *  &nbsp;N/A<br>
- **/
-Node *head_;
-
+	/**
+	 *  The head of the linked list(stack).
+	 **/
+	Node *head_;
 };
 
 //####################################
@@ -255,6 +222,7 @@ int main(int argc, const char * argv[]) {
 		std::string ans = myStack2.pop();
         std::cout<<"Value: "<< ans <<std::endl;
     }
+	std::string ans2 = myStack2.pop();
 
     return 0;
 }
