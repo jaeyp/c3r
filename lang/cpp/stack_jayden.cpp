@@ -16,13 +16,10 @@ public:
 
 	int GetSize() const;
 	
-	void Push(T data);
 	T Pop();
+	T Peek();
+	void Push(T data);
 	void Display();
-
-private:	
-	Node<T>* createNode(T data);
-	void freeNode(Node<T>* node);
 
 private:
 	Node<T>* mHead;
@@ -55,21 +52,28 @@ int Stack<T>::GetSize() const
 }
 
 template<typename T>
-void Stack<T>::Push(T data)
-{
-	Node<T>* node = createNode(data);
-
-	node->Next = mHead;
-	mHead = node;
-}
-
-template<typename T>
 T Stack<T>::Pop()
 {
 	Node<T>* node = mHead;
 	T data = node->Data;
 	mHead = mHead->Next;
+	delete node;
 	return data;
+}
+
+template<typename T>
+T Stack<T>::Peek()
+{
+	return mHead->Data;
+}
+
+template<typename T>
+void Stack<T>::Push(T data)
+{
+	Node<T>* node = new Node<T>{ data, nullptr };
+
+	node->Next = mHead;
+	mHead = node;
 }
 
 template<typename T>
@@ -88,18 +92,6 @@ void Stack<T>::Display()
 	std::cout << '\n';
 }
 
-template<typename T>
-Node<T>* Stack<T>::createNode(T data)
-{
-	return new Node<T>{ data, nullptr };
-}
-
-template<typename T>
-void Stack<T>::freeNode(Node<T>* node)
-{
-	delete node;
-}
-
 int main()
 {
 	Stack<std::string> s1{};
@@ -110,6 +102,9 @@ int main()
 	}
 
 	std::cout << "\n-------------Stack<string>------------\n";
+	s1.Display();
+
+	std::cout << "\nCall Peek(): " << s1.Peek() << '\n';
 	s1.Display();
 
 	std::cout << "\nCall Pop(): " << s1.Pop() << '\n';
