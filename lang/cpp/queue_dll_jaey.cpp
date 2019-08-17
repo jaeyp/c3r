@@ -51,7 +51,7 @@ Queue<T>::~Queue() {
 	for(int i=0; i<size; i++) {
 		Node<T>* node = cur;
 		cur = cur->next;
-		free(node);
+		delete node;
 	}
 }
 
@@ -77,7 +77,7 @@ Queue<T>::enqueue(T* data) {
 		rear->data = data;
 		rear = rear->next;
 	} else { // full - overwrite
-		//free(front->data);
+		//delete front->data;
 		rear->data = data;
 		rear = rear->next;
 		front = front->next;
@@ -126,7 +126,8 @@ int main(int argc, char** argv) {
 	std::cout << *qi->dequeue() << std::endl;
 
 	qi->~Queue();
-	free(qi);
+	delete qi;
+	qi = nullptr;
 
 	Queue<std::string> qs(5);
 	std::vector<std::string> vs{"one", "two", "three", "four", "five"};

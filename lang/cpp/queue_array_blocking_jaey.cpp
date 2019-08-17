@@ -59,7 +59,7 @@ Queue<T>::Queue(int sz) : size{sz+1}, front{0}, rear{0}, q{nullptr} {
 // Destructor
 template <typename T>
 Queue<T>::~Queue() {
-	free(q);
+	delete q;
 	q = nullptr;
 }
 

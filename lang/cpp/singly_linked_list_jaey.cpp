@@ -72,7 +72,7 @@ template <typename T> constexpr TNode<T>* TSLList<T>::createNode(T data) {
 
 template <typename T> constexpr void TSLList<T>::destroyNode(TNode<T>* node) {
 	if(node != nullptr) {
-		free(node);
+		delete node;
 		node = nullptr;
 		size--;
 	}
