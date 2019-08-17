@@ -63,6 +63,7 @@ template <typename T> TDLList<T>::TDLList() : head{nullptr}, tail{nullptr}, size
 
 // Destructor
 template <typename T> TDLList<T>::~TDLList() {
+	removeAll();
 }
 
 // Class TDLList Private Methods
