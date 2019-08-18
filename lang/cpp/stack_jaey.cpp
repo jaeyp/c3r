@@ -5,7 +5,9 @@ public:
 	Stack(int size) : size{size}, top{0} {
 		stack = new int[size];
 	}
-	~Stack(){}
+	~Stack(){
+		delete stack;
+	}
 	void push(int data) {
 		top = top + 1;
 		stack[top] = data;

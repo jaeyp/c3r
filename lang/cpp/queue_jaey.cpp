@@ -5,7 +5,9 @@ public:
 	Queue(int size) : size{size+1}, front{0}, rear{0} {
 		q = new int[size];
 	}
-	~Queue(){}
+	~Queue(){
+		delete q;
+	}
 	void enqueue(int data) {
 		if(isFull())
 			front = (front + 1) % size;
