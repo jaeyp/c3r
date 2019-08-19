@@ -19,6 +19,7 @@ public:
 	T Pop();
 	T Peek();
 	void Push(T data);
+	void Clear();
 	void Display();
 
 private:
@@ -35,14 +36,7 @@ Stack<T>::Stack() : mHead{nullptr}, mSize{0}
 template<typename T>
 Stack<T>::~Stack()
 {
-	Node<T>* node = nullptr;
-
-	while(mHead)
-	{
-		node = mHead;
-		mHead = mHead->Next;
-		delete node;
-	}
+	Clear();
 }
 
 template<typename T>
@@ -57,6 +51,7 @@ T Stack<T>::Pop()
 	Node<T>* node = mHead;
 	T data = node->Data;
 	mHead = mHead->Next;
+	mSize--;
 	delete node;
 	return data;
 }
@@ -74,6 +69,22 @@ void Stack<T>::Push(T data)
 
 	node->Next = mHead;
 	mHead = node;
+	mSize++;
+}
+
+template<typename T>
+void Stack<T>::Clear()
+{
+	Node<T>* node = nullptr;
+
+	while(mHead)
+	{
+		node = mHead;
+		mHead = mHead->Next;
+		delete node;
+	}
+
+	mSize = 0;
 }
 
 template<typename T>
@@ -91,7 +102,7 @@ void Stack<T>::Display()
 
 	std::cout << '\n';
 }
-
+/*
 int main()
 {
 	Stack<std::string> s1{};
@@ -121,4 +132,4 @@ int main()
 	std::cout << "\nCall Pop(): " << s1.Pop() << '\n';
 	s1.Display();
 }
-
+*/
