@@ -23,13 +23,13 @@ public:
 	void Display();
 
 private:
-	Node<T>* mHead;
+	Node<T>* mTop;
 	int mSize;
 
 };
 
 template<typename T>
-Stack<T>::Stack() : mHead{nullptr}, mSize{0}
+Stack<T>::Stack() : mTop{nullptr}, mSize{0}
 {
 }
 
@@ -48,9 +48,9 @@ int Stack<T>::GetSize() const
 template<typename T>
 T Stack<T>::Pop()
 {
-	Node<T>* node = mHead;
+	Node<T>* node = mTop;
 	T data = node->Data;
-	mHead = mHead->Next;
+	mTop = mTop->Next;
 	mSize--;
 	delete node;
 	return data;
@@ -59,7 +59,7 @@ T Stack<T>::Pop()
 template<typename T>
 T Stack<T>::Peek()
 {
-	return mHead->Data;
+	return mTop->Data;
 }
 
 template<typename T>
@@ -67,8 +67,8 @@ void Stack<T>::Push(T data)
 {
 	Node<T>* node = new Node<T>{ data, nullptr };
 
-	node->Next = mHead;
-	mHead = node;
+	node->Next = mTop;
+	mTop = node;
 	mSize++;
 }
 
@@ -77,10 +77,10 @@ void Stack<T>::Clear()
 {
 	Node<T>* node = nullptr;
 
-	while(mHead)
+	while(mTop)
 	{
-		node = mHead;
-		mHead = mHead->Next;
+		node = mTop;
+		mTop = mTop->Next;
 		delete node;
 	}
 
@@ -90,7 +90,7 @@ void Stack<T>::Clear()
 template<typename T>
 void Stack<T>::Display()
 {
-	Node<T>* node = mHead;
+	Node<T>* node = mTop;
 
 	std::cout << "Stack: ";
 
