@@ -11,8 +11,8 @@
 ## Repository
 ### Types of git objects
 * **commit** object 
-* **tree** object 
-* **blob** object  
+* **tree** object (`directory`)  
+* **blob** object (`file`)   
 * **tag** object  
 
 ### project/.git/objects (`Local Repository`)
