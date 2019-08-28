@@ -32,8 +32,8 @@ template <typename T> TNode<T>::~TNode() {
  */
 template <typename T> class TDLList{
 private:
-    TNode<T>* head;
-    TNode<T>* tail;
+	TNode<T>* head;
+	TNode<T>* tail;
 	int size;
 	constexpr TNode<T>* createNode(T data);
 	constexpr void destroyNode(TNode<T>* node);
@@ -44,7 +44,7 @@ public:
 	// Destructor
 	~TDLList();
 	// Class Methods
-    void insert(T data); //tail
+	void insert(T data); //tail
 	void insertBefore(T data, int index);
 	void insertAfter(T data, int index);
 	void remove(T data);
@@ -54,7 +54,7 @@ public:
 	constexpr int getSize();
 	T getData(int index);
 	void traverse();
-    void rtraverse();
+	void rtraverse();
 };
 
 // Constructor
