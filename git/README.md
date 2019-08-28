@@ -15,7 +15,7 @@
 * **blob** object  
 * **tag** object  
 
-### project/.git/objects
+### project/.git/objects (Local Repository)
 ```bash
 # Display commit logs (revision history)  
 ~$ git log --oneline  
@@ -76,7 +76,7 @@ modification, are permitted provided that the following conditions are met:
 
 ---
 
-## Index
+## Index (Staging Area)
 ### project/.git/index
 ```bash
 # Display staged objects  
