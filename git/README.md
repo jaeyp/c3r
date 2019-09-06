@@ -172,6 +172,13 @@ _This image was created by **Jaehyun**_
 ---
 
 ## Useful Commands
+* Switch remote repository
+```bash
+~$ git remote add origin <repository-url>
+~$ git pull origin master --allow-unrelated-histories
+# you might face with conflicts (e.g. in README.md)
+```
+
 * Reload ~/.gitconfig  
 ```bash
 ~$ git init
