@@ -7,10 +7,10 @@ public:
 	Calculator();
 	~Calculator();
 	
-	double Calculate(std::string const& input);
+	double Calculate(std::string const&);
 
 private:
-	double operate(double n1, double n2, char oper);
+	double operate(const double, const double, const char);
 	void clearAllMembers();
 	void clearBuffer();
 	void showError();
@@ -147,7 +147,7 @@ double Calculator::Calculate(std::string const& input)
 	return result;
 }
 
-double Calculator::operate(double n1, double n2, char oper)
+double Calculator::operate(const double n1, const double n2, const char oper)
 {
 	double result{0};
 

@@ -16,8 +16,8 @@ public:
 
 	int GetSize() const;
 
-	void Add(T data);
-	void RemoveAt(int index);
+	void Add(const T);
+	void RemoveAt(const int);
 	void Display();
 
 private:
@@ -54,7 +54,7 @@ int List<T>::GetSize() const
 }
 
 template<typename T>
-void List<T>::Add(T data)
+void List<T>::Add(const T data)
 {
 	Node<T>* newNode = new Node<T>{ data, nullptr };
 
@@ -78,7 +78,7 @@ void List<T>::Add(T data)
 }
 
 template<typename T>
-void List<T>::RemoveAt(int index)
+void List<T>::RemoveAt(const int index)
 {
 	if(mHead)
 	{
