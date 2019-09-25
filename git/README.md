@@ -174,8 +174,10 @@ _This image was created by **Jaehyun**_
 ## Useful Commands
 * Switch remote repository
 ```bash
+# you don't have to remove an existing .git folder
 ~$ git remote add origin <repository-url>
 ~$ git pull origin master --allow-unrelated-histories
+~$ git push origin master
 # you might face with conflicts (e.g. in README.md)
 ```
 
