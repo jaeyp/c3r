@@ -177,8 +177,8 @@ _This image was created by **Jaehyun**_
 # you don't have to remove an existing .git folder
 ~$ git remote add origin <repository-url>
 ~$ git pull origin master --allow-unrelated-histories
+# you might have to resolve conflicts here (e.g. in README.md)
 ~$ git push origin master
-# you might face with conflicts (e.g. in README.md)
 ```
 
 * Reload ~/.gitconfig  
