@@ -181,6 +181,27 @@ _This image was created by **Jaehyun**_
 ~$ git push origin master
 ```
 
+* Tagging
+```bash
+# Listing tags
+~$ git tag
+
+# Creating tags (Lightweight)
+~$ git tag v1.0.0
+
+# Tagging later
+~$ git tag -a v1.0.1 <commit-checksum> # e.g. 9fceb02
+
+# Push up all tags to remote server at once
+~$ git push origin --tags
+
+# Deleting tags
+~$ git tag -d v1.0.0
+
+# Remove tags from remote server
+~$ git push origin :v1.0.0
+```
+
 * Reload ~/.gitconfig  
 ```bash
 ~$ git init
@@ -211,7 +232,6 @@ _This image was created by **Jaehyun**_
 ```bash
 ~$ git clone -n <repository-name> # no checkout of HEAD
 ~$ git checkout -b <new-branch> <commit-sha> # set the HEAD of master to point to <commit-sha> into <new-branch>
-
 ```
 
 * Rollback commit  
@@ -232,7 +252,6 @@ If codes were already pushed to a remote server
 # o---o---o---O---X
 ~$ git reset --hard <commit-sha>
 ~$ git push -f origin master
-
 ```
 
 Else (when codes were NOT pushed to a remote server)
@@ -262,7 +281,6 @@ Else (when codes were NOT pushed to a remote server)
 # ------------- = ------------- = -------------
 #   <1234567>       <1234567>       <1234567>
 ~$ git reset --hard <commit-sha>
-
 ```
 
 ---
