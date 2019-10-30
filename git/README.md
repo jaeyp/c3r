@@ -187,6 +187,7 @@ _This image was created by **Jaehyun**_
 ~$ git commit -m "switch repository"
 ~$ git push origin master
 ```
+or  
 ```bash
 # you don't have to remove an existing .git folder
 ~$ git remote add origin <repository-url>
