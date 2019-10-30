@@ -174,7 +174,9 @@ _This image was created by **Jaehyun**_
 ## Useful Commands
 * Switch remote repository
 ```bash
-# you don't have to remove an existing .git folder
+# initialize git after deleting an existing .git folder
+~$ git init
+# if you don't want to remove an existing .git folder, just start from here
 ~$ git remote add origin <repository-url>
 ~$ git pull origin master --allow-unrelated-histories
 # you might have to resolve conflicts here (e.g. in README.md)
