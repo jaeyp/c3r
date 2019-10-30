@@ -174,12 +174,26 @@ _This image was created by **Jaehyun**_
 ## Useful Commands
 * Switch remote repository
 ```bash
+~$ git clone <repository1-url> <dir>
+~$ cd <dir>
+~$ git remote -v # check a current remote repository
+# switch repository
+~$ git remote set-url origin <repository2-url>
+~$ git remote -v # check a remote repository switched
+# pull new data from repository2
+~$ git pull origin master --allow-unrelated-histories
+# push old data to repository2
+~$ git add .
+~$ git commit -m "switch repository"
+~$ git push origin master
+```
+~~~```bash
 # you don't have to remove an existing .git folder
 ~$ git remote add origin <repository-url>
 ~$ git pull origin master --allow-unrelated-histories
 # you might have to resolve conflicts here (e.g. in README.md)
 ~$ git push origin master
-```
+```~~~
 
 * Tagging
 ```bash
