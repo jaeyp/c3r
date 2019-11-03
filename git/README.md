@@ -194,6 +194,7 @@ Else add a new repository
 ```bash
 # you don't have to remove an existing .git folder
 ~$ git remote add origin <repository-url>
+# pull new data from repository
 ~$ git pull origin master --allow-unrelated-histories
 # you might have to resolve conflicts here (e.g. in README.md)
 ~$ git push origin master
