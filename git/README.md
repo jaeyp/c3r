@@ -176,8 +176,11 @@ _This image was created by **Jaehyun**_
 ```bash
 ~$ git clone <repository1-url> <dir>
 ~$ cd <dir>
+# check a current remote repository
 ~$ git remote -v # check a current remote repository
-# switch repository
+```
+If there is a current remote repository, then switch the repository
+```bash
 ~$ git remote set-url origin <repository2-url>
 ~$ git remote -v # check a remote repository switched
 # pull new data from repository2
@@ -187,7 +190,7 @@ _This image was created by **Jaehyun**_
 ~$ git commit -m "switch repository"
 ~$ git push origin master
 ```
-or  
+Else add a new repository
 ```bash
 # you don't have to remove an existing .git folder
 ~$ git remote add origin <repository-url>
