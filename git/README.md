@@ -200,6 +200,11 @@ Else add a new repository
 ~$ git push origin master
 ```
 
+* Undo a Git Add
+```bash
+~$ git reset
+```
+
 * Tagging
 ```bash
 # Listing tags
