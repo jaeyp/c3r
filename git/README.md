@@ -172,6 +172,11 @@ _This image was created by **Jaehyun**_
 ---
 
 ## Useful Commands
+* Check remote repository
+```bash
+~$ git remote [-v | --verbose]
+```
+
 * Switch remote repository
 ```bash
 ~$ git clone <repository1-url> <dir>
