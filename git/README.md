@@ -172,12 +172,8 @@ _This image was created by **Jaehyun**_
 ---
 
 ## Useful Commands
-* Check remote repository
-```bash
-~$ git remote [-v | --verbose]
-```
 
-* Switch remote repository
+* Switching remote repository
 ```bash
 ~$ git clone <repository1-url> <dir>
 ~$ cd <dir>
@@ -203,6 +199,17 @@ Else add a new repository
 ~$ git pull origin master --allow-unrelated-histories
 # you might have to resolve conflicts here (e.g. in README.md)
 ~$ git push origin master
+```
+
+* Checking remote repository
+```bash
+~$ git remote [-v | --verbose]
+```
+
+* Setting up to track remote branch from local branch
+```bash
+# git branch --set-upstream-to=origin/<branch> <remote-branch>
+~$ git branch --set-upstream-to=origin/master master
 ```
 
 * Undo a Git Add
