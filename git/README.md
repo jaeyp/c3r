@@ -193,6 +193,7 @@ If there is a current remote repository, then switch the repository
 ```
 Else add a new repository
 ```bash
+~$ git init
 # you don't have to remove an existing .git folder
 ~$ git remote add origin <repository-url>
 # pull new data from repository
