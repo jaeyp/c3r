@@ -173,6 +173,15 @@ _This image was created by **Jaehyun**_
 
 ## Useful Commands
 
+* Add a new repository
+```bash
+~$ git init
+# you don't have to remove an existing .git folder
+~$ git remote add origin <repository-url>
+# pull new data from repository
+~$ git pull origin master
+```
+
 * Switching remote repository
 ```bash
 ~$ git clone <repository1-url> <dir>
@@ -189,16 +198,6 @@ If there is a current remote repository, then switch the repository
 # push old data to repository2
 ~$ git add .
 ~$ git commit -m "switch repository"
-~$ git push origin master
-```
-Else add a new repository
-```bash
-~$ git init
-# you don't have to remove an existing .git folder
-~$ git remote add origin <repository-url>
-# pull new data from repository
-~$ git pull origin master --allow-unrelated-histories
-# you might have to resolve conflicts here (e.g. in README.md)
 ~$ git push origin master
 ```
 
