@@ -207,7 +207,10 @@ If there is a current remote repository, then switch the repository
 ~$ git --work-tree=/path/to/outputdir checkout HEAD -- .
 # To checkout a subdirectory or file from your HEAD to a specific directory:
 ~$ git --work-tree=/path/to/outputdir checkout HEAD -- subdirname
-# Minor note - you do need an absolute path as shell tilde expansion doesn't occur, i.e. --work-tree=/home/thomasg/okcopy rather than --work-tree=~/okcopy (possibly using a relative path while sitting inside the same git tree works too, but that way lies madness and git status outputs in R'lyehian)
+# Minor note - you do need an absolute path as shell tilde expansion doesn't occur, 
+# i.e. --work-tree=/home/thomasg/okcopy rather than --work-tree=~/okcopy 
+# (possibly using a relative path while sitting inside the same git tree works too, 
+# but that way lies madness and git status outputs in R'lyehian)
 ```
 
 * Checking remote repository
