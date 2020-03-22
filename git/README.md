@@ -208,7 +208,7 @@ If there is a current remote repository, then switch the repository
 
 * Checkout to a specific folder
 ```bash
-# To checkout everything from your HEAD (not index) to a specific out directory:
+# To checkout everything from your HEAD (or <commit-checksum>) to a specific out directory:
 ~$ git --work-tree=/path/to/outputdir checkout HEAD -- .
 
 # To checkout a subdirectory or file from your HEAD to a specific directory:
