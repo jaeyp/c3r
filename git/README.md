@@ -176,8 +176,10 @@ _This image was created by **Jaehyun**_
 * Add a new repository
 ```bash
 ~$ git init
+
 # you don't have to remove an existing .git folder
 ~$ git remote add origin <repository-url>
+
 # pull new data from repository
 ~$ git pull origin master
 ```
@@ -186,6 +188,7 @@ _This image was created by **Jaehyun**_
 ```bash
 ~$ git clone <repository1-url> <dir>
 ~$ cd <dir>
+
 # check a current remote repository
 ~$ git remote -v # check a current remote repository
 ```
@@ -193,8 +196,10 @@ If there is a current remote repository, then switch the repository
 ```bash
 ~$ git remote set-url origin <repository2-url>
 ~$ git remote -v # check a remote repository switched
+
 # pull new data from repository2
 ~$ git pull origin master --allow-unrelated-histories
+
 # push old data to repository2
 ~$ git add .
 ~$ git commit -m "switch repository"
@@ -205,6 +210,7 @@ If there is a current remote repository, then switch the repository
 ```bash
 # To checkout everything from your HEAD (not index) to a specific out directory:
 ~$ git --work-tree=/path/to/outputdir checkout HEAD -- .
+
 # To checkout a subdirectory or file from your HEAD to a specific directory:
 ~$ git --work-tree=/path/to/outputdir checkout HEAD -- subdirname
 
