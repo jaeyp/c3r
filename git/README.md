@@ -225,6 +225,21 @@ If there is a current remote repository, then switch the repository
 ~$ git remote [-v | --verbose]
 ```
 
+* Push a new local branch to a remote Git repository and track it
+```bash
+# 1.create a new branch
+~$ git checkout -b feature_branch_name
+
+# 2.edit, add and commit your files
+
+# 3.push your branch to the remote repository
+~$ git push -u origin feature_branch_name
+
+# what is upstream branch? (-u/--set-upstream)
+# the “upstream branch” is the remote branch hosted on a remote Git repository
+# it allows us to use argument-less git-pull (from upstream) or git-push (to upstream)
+```
+
 * Setting up to track remote branch from local branch
 ```bash
 # git branch --set-upstream-to=origin/<branch> <remote-branch>
