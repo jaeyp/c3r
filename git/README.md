@@ -240,6 +240,57 @@ If there is a current remote repository, then switch the repository
 # it allows us to use argument-less git-pull (from upstream) or git-push (to upstream)
 ```
 
+* Delete a branch
+```bash
+# delete branch locally
+~$ git branch -d localBranchName
+
+# delete branch remotely
+~$ git push origin --delete remoteBranchName
+```
+
+* Change branch name
+```bash
+# If you want to rename a branch while pointed to any branch, do:
+~$ git branch -m <oldname> <newname>
+
+# If you want to rename the current branch, you can do:
+~$ git branch -m <newname>
+```
+
+* Amend(change) the message of the latest pushed commit
+```bash
+~$ git commit --amend -m "new commit message"
+```
+
+* Squash all commits through rebase
+```bash
+# 1a.squash last two commits into one
+~$ git rebase -i HEAD~~
+
+# 1b.squash all commits including master into one
+~$ git rebase -i --root  
+
+# 1c.squash all commits in current branch into one
+~$ git rebase -i master
+
+# 2.change pick to squash(or fixup) of commits that you want to squash then save
+----------------------------
+pick eaa86c3 added f01
+squash(or fixup) 4f08444 modified f01
+squash(or fixup) 868526b modified f01 again
+squash(or fixup) 9caaff1 modified f01 again again
+squash(or fixup) a5258da edited test history
+----------------------------
+
+# 3.change commit message if you want
+~$ git commit --amend -m "new commit message"
+
+# 4.push to the remote branch (upstream)
+git push --force-with-lease
+```
+
+
 * Setting up to track remote branch from local branch
 ```bash
 # git branch --set-upstream-to=origin/<branch> <remote-branch>
