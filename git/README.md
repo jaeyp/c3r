@@ -182,6 +182,9 @@ _This image was created by **Jaehyun**_
 
 # pull new data from repository
 ~$ git pull origin master
+
+# error: git couldn't find remote ref
+~$ git push origin master
 ```
 
 * Switching remote repository
