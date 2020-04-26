@@ -187,6 +187,20 @@ _This image was created by **Jaehyun**_
 ~$ git push origin master
 ```
 
+* Move to a new remote repository removing history
+```bash
+# 1. create a new repository on github
+# 2. delete .git directory
+# 3.
+~$ git init
+# 4.
+~$ git remote add origin <new repository-url>
+# 5.
+~$ git add .
+~$ git commit -m "initial commit"
+~$ git push origin master
+```
+
 * Switching remote repository
 ```bash
 ~$ git clone <repository1-url> <dir>
