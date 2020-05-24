@@ -191,11 +191,13 @@ _This image was created by **Jaehyun**_
 ```bash
 # 1. create a new repository on github
 # 2. delete .git directory
-# 3.
+# 3. reinitialize existing git repository
 ~$ git init
-# 4.
-~$ git remote add origin <new repository-url>
-# 5.
+# 4. switch remote repository
+~$ git remote set-url origin <new repository-url>
+# pull new data from new repository
+~$ git pull origin master --allow-unrelated-histories
+# 5. resolve conflict and upload source codes to a new repository
 ~$ git add .
 ~$ git commit -m "initial commit"
 ~$ git push origin master
