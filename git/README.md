@@ -190,12 +190,11 @@ _This image was created by **Jaehyun**_
 * Move to a new remote repository removing history
 ```bash
 # 1. create a new repository on github
-# 2. delete .git directory
-# 3. reinitialize existing git repository
+# 2. reinitialize existing git repository (no need to delete existing .git directory)
 ~$ git init
-# 4. switch remote repository
+# 3. switch remote repository
 ~$ git remote set-url origin <new repository-url>
-# pull new data from new repository
+# 4. pull new data from new repository
 ~$ git pull origin master --allow-unrelated-histories
 # 5. resolve conflict and upload source codes to a new repository
 ~$ git add .
