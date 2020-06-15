@@ -256,6 +256,9 @@ If there is a current remote repository, then switch the repository
 # what is upstream branch? (-u/--set-upstream)
 # the “upstream branch” is the remote branch hosted on a remote Git repository
 # it allows us to use argument-less git-pull (from upstream) or git-push (to upstream)
+
+# Check current upstream branch
+~$ git branch -vv
 ```
 
 * Delete a branch
