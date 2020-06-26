@@ -270,6 +270,19 @@ If there is a current remote repository, then switch the repository
 ~$ git push origin --delete remoteBranchName
 ```
 
+* Delete a remote branche
+```bash
+~$ git branch -a
+# *master
+#  test
+#  remote/origin/master
+#  remote/origin/test
+
+~$ git push origin --delete test
+# To <URL of your repository>.git
+#  - [deleted]         test
+```
+
 * Change branch name
 ```bash
 # If you want to rename a branch while pointed to any branch, do:
