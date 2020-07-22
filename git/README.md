@@ -245,12 +245,12 @@ If there is a current remote repository, then switch the repository
 
 * Push a new local branch to a remote Git repository and track it
 ```bash
-# 1.create a new branch
+# 1.create a local feature branch
 ~$ git checkout -b feature_branch_name
 
 # 2.edit, add and commit your files
 
-# 3.push your branch to the remote repository
+# 3.push updates to the remote feature branch and set it as upstream branch
 ~$ git push -u origin feature_branch_name
 
 # what is upstream branch? (-u/--set-upstream)
@@ -259,6 +259,16 @@ If there is a current remote repository, then switch the repository
 
 # Check current upstream branch
 ~$ git branch -vv
+
+# continue with feature branch
+// modify codes
+~$ git add .
+~$ git commit -m 'comments'
+// before push it, merge master or base branch first.
+~$ git merge origin/master
+// resolve confilicts if there is
+// then, push it into upstream branch
+~$ git push
 ```
 
 * checkout a local brach from remote
