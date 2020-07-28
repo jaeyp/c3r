@@ -243,6 +243,11 @@ If there is a current remote repository, then switch the repository
 ~$ git remote [-v | --verbose]
 ```
 
+* Rollback unwanted changes
+```bash
+~$ git checkout -- .\src\importIcons.ts
+```
+
 * Push a new local branch to a remote Git repository and track it
 ```bash
 # 1.create a local feature branch
@@ -285,7 +290,7 @@ If there is a current remote repository, then switch the repository
 ~$ git push origin --delete remoteBranchName
 ```
 
-* Delete a remote branche
+* Delete a remote branch
 ```bash
 ~$ git branch -a
 # *master
