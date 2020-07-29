@@ -279,6 +279,11 @@ If there is a current remote repository, then switch the repository
 * checkout a local brach from remote
 ```bash
 ~$ git checkout -t origin/feature_branch_name
+or
+~$ git checkout --track origin/feature_branch_name
+or
+~$ git fetch -all
+~$ git checkout feature_branch_name
 ```
 
 * Delete a branch
