@@ -276,7 +276,7 @@ If there is a current remote repository, then switch the repository
 ~$ git push
 ```
 
-* checkout a local brach from remote
+* checkout a remote branch
 ```bash
 ~$ git checkout -t origin/feature_branch_name
 or
