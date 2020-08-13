@@ -171,82 +171,8 @@ _This image was created by **Jaehyun**_
 
 ---
 
-## Useful Commands
 
-* Add a new repository
-```bash
-~$ git init
-
-# you don't have to remove an existing .git folder
-~$ git remote add origin <repository-url>
-
-# pull new data from repository
-~$ git pull origin master
-
-# error: git couldn't find remote ref
-~$ git push origin master
-```
-
-* Move to a new remote repository removing history
-```bash
-# 1. create a new repository on github
-# 2. reinitialize existing git repository (no need to delete existing .git directory)
-~$ git init
-# 3. switch remote repository
-~$ git remote set-url origin <new repository-url>
-# 4. pull new data from new repository
-~$ git pull origin master --allow-unrelated-histories
-# 5. resolve conflict and upload source codes to a new repository
-~$ git add .
-~$ git commit -m "initial commit"
-~$ git push origin master
-```
-
-* Switching remote repository
-```bash
-~$ git clone <repository1-url> <dir>
-~$ cd <dir>
-
-# check a current remote repository
-~$ git remote -v # check a current remote repository
-```
-If there is a current remote repository, then switch the repository
-```bash
-~$ git remote set-url origin <repository2-url>
-~$ git remote -v # check a remote repository switched
-
-# pull new data from repository2
-~$ git pull origin master --allow-unrelated-histories
-
-# push old data to repository2
-~$ git add .
-~$ git commit -m "switch repository"
-~$ git push origin master
-```
-
-* Checkout to a specific folder
-```bash
-# To checkout everything from your HEAD (or <commit-checksum>) to a specific out directory:
-~$ git --work-tree=/path/to/outputdir checkout HEAD -- .
-
-# To checkout a subdirectory or file from your HEAD to a specific directory:
-~$ git --work-tree=/path/to/outputdir checkout HEAD -- subdirname
-
-# Minor note - you do need an absolute path as shell tilde expansion doesn't occur, 
-# i.e. --work-tree=/home/thomasg/okcopy rather than --work-tree=~/okcopy 
-# (possibly using a relative path while sitting inside the same git tree works too, 
-# but that way lies madness and git status outputs in R'lyehian)
-```
-
-* Checking remote repository
-```bash
-~$ git remote [-v | --verbose]
-```
-
-* Rollback unwanted changes
-```bash
-~$ git checkout -- .\src\importIcons.ts
-```
+## Branches
 
 * Push a new local branch to a remote Git repository and track it
 ```bash
@@ -323,6 +249,84 @@ or set automatic prune with git fetch or pull
 
 # If you want to rename the current branch, you can do:
 ~$ git branch -m <newname>
+```
+
+
+## Useful Commands
+
+* Add a new repository
+```bash
+~$ git init
+
+# you don't have to remove an existing .git folder
+~$ git remote add origin <repository-url>
+
+# pull new data from repository
+~$ git pull origin master
+
+# error: git couldn't find remote ref
+~$ git push origin master
+```
+
+* Move to a new remote repository removing history
+```bash
+# 1. create a new repository on github
+# 2. reinitialize existing git repository (no need to delete existing .git directory)
+~$ git init
+# 3. switch remote repository
+~$ git remote set-url origin <new repository-url>
+# 4. pull new data from new repository
+~$ git pull origin master --allow-unrelated-histories
+# 5. resolve conflict and upload source codes to a new repository
+~$ git add .
+~$ git commit -m "initial commit"
+~$ git push origin master
+```
+
+* Switching remote repository
+```bash
+~$ git clone <repository1-url> <dir>
+~$ cd <dir>
+
+# check a current remote repository
+~$ git remote -v # check a current remote repository
+```
+If there is a current remote repository, then switch the repository
+```bash
+~$ git remote set-url origin <repository2-url>
+~$ git remote -v # check a remote repository switched
+
+# pull new data from repository2
+~$ git pull origin master --allow-unrelated-histories
+
+# push old data to repository2
+~$ git add .
+~$ git commit -m "switch repository"
+~$ git push origin master
+```
+
+* Checkout to a specific folder
+```bash
+# To checkout everything from your HEAD (or <commit-checksum>) to a specific out directory:
+~$ git --work-tree=/path/to/outputdir checkout HEAD -- .
+
+# To checkout a subdirectory or file from your HEAD to a specific directory:
+~$ git --work-tree=/path/to/outputdir checkout HEAD -- subdirname
+
+# Minor note - you do need an absolute path as shell tilde expansion doesn't occur, 
+# i.e. --work-tree=/home/thomasg/okcopy rather than --work-tree=~/okcopy 
+# (possibly using a relative path while sitting inside the same git tree works too, 
+# but that way lies madness and git status outputs in R'lyehian)
+```
+
+* Checking remote repository
+```bash
+~$ git remote [-v | --verbose]
+```
+
+* Rollback unwanted changes
+```bash
+~$ git checkout -- .\src\importIcons.ts
 ```
 
 * Amend(change) the message of the latest pushed commit
