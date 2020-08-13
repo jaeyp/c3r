@@ -308,6 +308,14 @@ or
 #  - [deleted]         test
 ```
 
+*  Update branches which are no longer exist on the remote
+```bash
+~$ git fetch --prune
+~$ git pull --prune
+or set automatic prune with git fetch or pull
+~$ git config --global fetch.prune true
+```
+
 * Change branch name
 ```bash
 # If you want to rename a branch while pointed to any branch, do:
