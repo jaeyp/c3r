@@ -172,7 +172,7 @@ _This image was created by **Jaehyun**_
 ---
 
 ## Useful Commands
-## Branches
+### Branches
 
 * Push a new local branch to a remote Git repository and track it
 ```bash
