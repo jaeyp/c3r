@@ -171,7 +171,7 @@ _This image was created by **Jaehyun**_
 
 ---
 
-
+## Useful Commands
 ## Branches
 
 * Push a new local branch to a remote Git repository and track it
@@ -251,8 +251,7 @@ or set automatic prune with git fetch or pull
 ~$ git branch -m <newname>
 ```
 
-
-## Useful Commands
+### Commons
 
 * Add a new repository
 ```bash
