@@ -481,6 +481,18 @@ Else (when codes were NOT pushed to a remote server)
 
 ---
 
+## TroubleShooting
+### Errors while pulling
+
+* error: The following untracked working tree files would be overwritten by merge(or checkout)
+```bash
+# the problem is caused by some untracked working tree files. So just solving these untracked files solves this problem.
+# Solutions: Open SourceTree through the command line, enter the local version warehouse directory, directly executed
+~$ git clean -d -fx
+```
+
+---
+
 ## References
 ```bash
 # Git all commands  
