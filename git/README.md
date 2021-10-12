@@ -204,12 +204,17 @@ _This image was created by **Jaehyun**_
 
 * checkout a remote branch
 ```bash
-~$ git checkout -t origin/feature_branch_name
+~$ git checkout -t origin/remote_branch_name
 or
-~$ git checkout --track origin/feature_branch_name
+~$ git checkout --track origin/remote_branch_name
 or
 ~$ git fetch -all
-~$ git checkout feature_branch_name
+~$ git checkout remote_branch_name
+```
+
+* checkout a remote branch with different name
+```bash
+~$ git checkout -b local_branch_name -t origin/remote_branch_name
 ```
 
 * Delete a branch
