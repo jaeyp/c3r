@@ -368,8 +368,8 @@ git push --force-with-lease
 
 * Setting up to track remote branch from local branch
 ```bash
-# git branch --set-upstream-to=origin/<branch> <remote-branch>
-~$ git branch --set-upstream-to=origin/master master
+# git branch --set-upstream-to=<remote-path>/<remote-branch>
+~$ git branch --set-upstream-to=origin/master
 ```
 
 * Undo a Git Add
