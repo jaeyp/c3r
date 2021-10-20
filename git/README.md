@@ -370,10 +370,10 @@ git push --force-with-lease
 ```bash
 # git branch --set-upstream-to=<remote-path>/<remote-branch>
 ~$ git branch --set-upstream-to=origin/master
-# git branch -u <remote-path> <remote-branch>
-~$ git branch -u origin master
-# git branch <local-branch> -u <remote-path> <remote-branch>
-~$ git branch ALT-1654 -u origin master
+# git branch -u <remote-path>/<remote-branch>
+~$ git branch -u origin/develop-uat
+# git branch <local-branch> -u <remote-path>/<remote-branch>
+~$ git branch ALT-1654 -u origin/ALT-1654
 ```
 
 * Undo a Git Add
